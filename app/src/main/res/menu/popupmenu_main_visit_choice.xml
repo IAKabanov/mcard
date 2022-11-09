@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/popupmenu_main_visit_choice_visit"
+        android:title="@string/item_main_visit_choice_visit" />
+    <item
+        android:id="@+id/popupmenu_main_visit_choice_analisis_visit"
+        android:title="@string/item_main_visit_choice_analisis_visit" />
+</menu>

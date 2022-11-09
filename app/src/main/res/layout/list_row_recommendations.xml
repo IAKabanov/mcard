@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    style="?attr/tvListItem">
+
+   <TextView
+       android:id="@+id/lrr_adapter_recommendations_id"
+       android:layout_width="1dp"
+       android:layout_height="wrap_content"
+       android:visibility="invisible"
+       android:singleLine="true">
+   </TextView>
+
+   <TextView
+       android:id="@+id/lrr_adapter_recommendations_name"
+       android:layout_width="400dp"
+       android:layout_height="wrap_content"
+       android:text="@string/recommendations_lrd_name"
+       android:layout_weight="1"
+       android:layout_gravity="center_vertical|left"
+       android:gravity="fill_horizontal|center_vertical|start|fill|left|right|end">
+   </TextView>
+
+</LinearLayout>

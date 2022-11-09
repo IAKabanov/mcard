@@ -1,0 +1,40 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+        //maven { url "https://jitpack.io" }    // для обтекания текста and RippleDrawable
+
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+        google()
+    }
+    dependencies {
+        //classpath 'com.android.tools.build:gradle:1.5.0'
+        //classpath 'com.google.gms:google-services:1.5.0-beta2'
+        classpath 'com.android.tools.build:gradle:3.3.0'
+        classpath 'com.google.gms:google-services:3.0.0' // GA
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8' // для butterknife
+        //classpath 'com.jakewharton:butterknife-gradle-plugin:8.8.1'  // для butterknife
+
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        //maven { url "https://jitpack.io" }    // для обтекания текста and RippleDrawable
+
+        google()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

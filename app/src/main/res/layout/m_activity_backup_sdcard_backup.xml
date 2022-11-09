@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlBackupSDCardBackupContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="ru.kai.mcard.MBackupSDCardForBackupActivity"
+    style="?attr/mainBackground">
+
+    <android.support.design.widget.AppBarLayout
+        app:theme="?attr/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mMBackupSDCardBackupAppBarLayout">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mMBackupSDCardBackupToolbar"
+            android:minHeight="?attr/actionBarSize"
+            android:fitsSystemWindows="true"
+            app:title="@string/backup_sdcard_backup_title">
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/mMBackupSDCardBackupAppBarLayout">
+    <LinearLayout
+        android:id="@+id/llBackupSDCardBackupsButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/filds_margin_8"
+        android:layout_marginLeft="@dimen/filds_margin"
+        android:layout_marginRight="@dimen/filds_margin">
+
+        <TextView
+            style="?attr/tvCaptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvBackupSDCardBackupChosenDirCaption"
+            android:layout_margin="@dimen/filds_margin"
+            android:text="@string/backup_sdcard_text_choose_dir"
+            android:gravity="left" />
+
+        <LinearLayout
+            style="?attr/styleEditsViewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/filds_margin"
+            android:layout_marginRight="@dimen/filds_margin">
+
+            <TextView
+                style="@style/StyleEditsView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/tvBackupSDCardBackupDir"
+                android:paddingLeft="@dimen/filds_margin"
+                android:hint="@string/backup_sdcard_text_choose_dir"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:singleLine="true" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=">"
+                android:id="@+id/butOpenBackupSDCardBackupDir"
+                android:onClick="chooseBackupSDCardBackupDir"/>
+
+        </LinearLayout>
+
+        <Button
+            style="?attr/btnStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/filds_margin"
+            android:text="@string/backup_sdcard_btn_backup"
+            android:id="@+id/btnDoBackupToSDCard"
+            android:onClick="doBackupToSDCard"/>
+
+        <TextView
+            style="?attr/tvCaptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvBackupToSDCardBackupHelp"
+            android:text="@string/backup_sdcard_backup_help"
+            android:layout_marginTop="18dp"
+            android:paddingLeft="@dimen/filds_margin_12"
+            android:paddingRight="@dimen/filds_margin_12"
+            android:textStyle="normal"
+            android:textSize="14sp"
+            android:clickable="true"/>
+
+
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>
+

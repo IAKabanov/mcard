@@ -1,0 +1,70 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="explanations_text_margin">16dp</dimen>
+    <dimen name="explanations_text_size">16sp</dimen>
+
+    <dimen name="filds_margin">4dp</dimen>
+    <dimen name="filds_margin_8">8dp</dimen>
+    <dimen name="filds_margin_12">12dp</dimen>
+    <dimen name="filds_margin_16">16dp</dimen>
+    <dimen name="filds_margin_24">24dp</dimen>
+    <dimen name="filds_margin_32">32dp</dimen>
+    <dimen name="filds_margin_36">36dp</dimen>
+    <dimen name="filds_margin_48">48dp</dimen>
+    <dimen name="filds_margin_64">64dp</dimen>
+
+    <dimen name="devider_margin">8dp</dimen>
+
+    <dimen name="mcard_main_list_margin_2">2dp</dimen>
+    <dimen name="mcard_main_list_devider_height">2dp</dimen>
+
+    <dimen name="filds_padding">2dp</dimen>
+    <dimen name="filds_padding_left">6dp</dimen>
+    <dimen name="filds_padding_left_bottom_string">16dp</dimen>
+
+    <dimen name="fab_shadow_offset">3dp</dimen>
+    <dimen name="fab_shadow_radius">9dp</dimen>
+
+    <dimen name="fab_size_normal">56dp</dimen>
+    <dimen name="fab_size_mini">40dp</dimen>
+
+    <dimen name="fab_stroke_width">1dp</dimen>
+
+    <dimen name="fab_icon_size">24dp</dimen>
+
+    <dimen name="fab_plus_icon_size">14dp</dimen>
+    <dimen name="fab_plus_icon_stroke">2dp</dimen>
+
+    <dimen name="fab_actions_spacing">16dp</dimen>
+    <dimen name="fab_labels_margin">8dp</dimen>
+
+    <dimen name="app_bar_height">120dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+    <dimen name="text_big_size">28dp</dimen>
+
+    <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html -->
+    <dimen name="navigation_drawer_width">240dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+
+
+
+    <dimen name="edit_text_plus_text_size_13sp">13sp</dimen>  <!-- input text medium 14sp -->
+    <dimen name="edit_text_plus_helper_text_size_12sp">12sp</dimen>  <!-- input text Helper medium 16sp Google recommendation -->
+    <dimen name="edit_text_plus_label_text_size_16sp">16sp</dimen>  <!-- input text Label medium 16sp Google recommendation -->
+    <dimen name="edit_text_plus_text_size_18sp">18sp</dimen>
+
+    <dimen name="edit_text_for_list_text_size_15sp">15sp</dimen>   <!-- для списков regular 15sp -->
+    <dimen name="edit_text_for_list_text_size_17sp">17sp</dimen>   <!-- для списков regular 17sp -->
+
+    <dimen name="button_text_size_18sp">14sp</dimen>  <!-- medium 14sp -->
+
+</resources>

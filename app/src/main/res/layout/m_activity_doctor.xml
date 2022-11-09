@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlDoctorContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="ru.kai.mcard.MDoctorActivity"
+    style="?attr/mainBackground">
+
+    <android.support.design.widget.AppBarLayout
+        app:theme="?attr/toolBar"
+        android:id="@+id/mDoctorAppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/mDoctorToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:fitsSystemWindows="true"
+            app:title="@string/doctor_title_activity">
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        style="?attr/tvCaptions"
+        android:id="@+id/tvDoctorCaption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/doctor_caption_name"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="@dimen/filds_margin"
+        android:layout_marginRight="@dimen/filds_margin"
+        android:layout_below="@+id/mDoctorAppBarLayout"/>
+
+    <LinearLayout
+        style="?attr/styleEditsViewContainer"
+        android:id="@+id/llDoctorName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/filds_margin"
+        android:layout_marginLeft="@dimen/filds_margin"
+        android:layout_marginRight="@dimen/filds_margin"
+        android:layout_below="@+id/tvDoctorCaption">
+
+        <EditText
+            style="@style/StyleEditsView"
+            android:id="@+id/editDoctorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/doctor_hint_name"
+            android:inputType="textCapWords" />
+
+    </LinearLayout>
+
+    <TextView
+        style="?attr/tvCaptions"
+        android:id="@+id/tvDoctorsSpecialisation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="@dimen/filds_margin"
+        android:layout_marginRight="@dimen/filds_margin"
+        android:text="@string/doctor_caption_specialization"
+        android:layout_below="@+id/llDoctorName"/>
+
+    <RelativeLayout
+        style="?attr/styleEditsViewContainer"
+        android:id="@+id/rlDoctorsSpecialisation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/filds_margin"
+        android:layout_marginLeft="@dimen/filds_margin"
+        android:layout_marginRight="@dimen/filds_margin"
+        android:layout_below="@+id/tvDoctorsSpecialisation">
+
+        <AutoCompleteTextView
+            style="@style/StyleEditsView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editDoctorsSpecialisation"
+            android:hint="@string/visit_hint_specialization"
+            android:inputType="textAutoComplete"
+            android:layout_toLeftOf="@+id/btnOpenDoctorSpecialization" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_open"
+            android:id="@+id/btnOpenDoctorSpecialization"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="false"
+            android:layout_alignBottom="@+id/editDoctorsSpecialisation"
+            android:onClick="doctorSpecializationOpen"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlProfileEditContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="ru.kai.mcard.MProfileEditActivity"
+    style="?attr/mainBackground">
+
+    <android.support.design.widget.AppBarLayout
+        app:theme="?attr/toolBar"
+        android:id="@+id/mProfileEditAppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/mProfileEditToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:fitsSystemWindows="true"
+            app:title="@string/edit_profiles_toolbar_title">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/llProfileEdit"
+        android:layout_below="@+id/mProfileEditAppBarLayout"
+        android:layout_marginLeft="@dimen/filds_margin"
+        android:layout_marginRight="@dimen/filds_margin"
+        android:layout_marginTop="@dimen/filds_margin_12">
+
+        <TextView
+            style="?attr/tvTitle"
+            android:id="@+id/tvProfileEditTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_profiles_title"
+            android:textIsSelectable="false"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            style="?attr/tvCaptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/doctor_caption_name"
+            android:id="@+id/tvProfileEditCaption"/>
+
+        <LinearLayout
+            style="?attr/styleEditsViewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                style="@style/StyleEditsView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editProfileEditName"
+                android:singleLine="true"/>
+
+        </LinearLayout>
+
+        <RadioGroup
+            style="?attr/styleEditsViewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:id="@+id/rgProfileEditSex"
+            android:orientation="horizontal">
+
+            <TextView
+                style="?attr/tvCaptions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:paddingLeft="4dp"
+                android:text="@string/edit_profiles_sex_caption"
+                android:id="@+id/tvProfileEditSexCaption"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:textAlignment="viewStart" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="@string/edit_profiles_sex_m"
+                android:id="@+id/rbProfileEditSexM"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_profiles_sex_w"
+                android:id="@+id/rbProfileEditSexW"
+                android:layout_weight="1"/>
+        </RadioGroup>
+
+        <LinearLayout
+            style="?attr/styleEditsViewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp">
+
+            <TextView
+                style="?attr/tvCaptions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="4dp"
+                android:text="@string/edit_profiles_birthday_caption"
+                android:id="@+id/tvProfileEditBirthdayCaption"
+                android:gravity="center_vertical"
+                android:paddingRight="16dp"/>
+
+            <TextView
+                style="@style/StyleEditsView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/tvProfileEditBirthdayDate"
+                android:hint="@string/edit_profiles_birthday"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="setProfileEditBirthdayDate" />
+
+            <EditText
+                style="@style/StyleEditsView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+
+        <TextView
+            style="?attr/tvCaptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="@string/visit_tv_comment"
+            android:id="@+id/tvProfileEditComment" />
+
+        <EditText
+            style="?attr/styleEditsViewWithoutContainer"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/editProfileEditComment"
+            android:textAlignment="gravity"
+            android:gravity="top|left" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+

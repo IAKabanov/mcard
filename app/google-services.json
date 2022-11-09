@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "155542338174",
+    "project_id": "mcard-d2f49"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:155542338174:android:81fa6cd5c1db8e7b",
+        "android_client_info": {
+          "package_name": "ru.kai.mcard"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHEXDYoKf48coeQSm4Uov8Q3wzZaxD03w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-77304402-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

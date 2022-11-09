@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    style="?attr/tvListItem">
+
+   <TextView
+       android:id="@+id/lrd_adapter_doctors_id"
+       android:layout_width="1dp"
+       android:layout_height="wrap_content"
+       android:visibility="invisible"
+       android:singleLine="true">
+   </TextView>
+   <TextView
+       android:id="@+id/lrd_adapter_doctors_name"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/doctors_lrd_name"
+       android:layout_weight="1">
+   </TextView>
+
+</LinearLayout>

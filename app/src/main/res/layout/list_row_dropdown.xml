@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:divider="@color/color_standart_green_main_background"
+    style="?attr/tvListItem">
+
+   <TextView
+       android:id="@+id/lrdd_adapter_id"
+       android:layout_width="1dp"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="2dp"
+       android:text=""
+       android:textSize="19dp"
+       android:layout_weight="0.1"
+       android:visibility="invisible"
+       android:singleLine="true">
+   </TextView>
+    <TextView
+        android:id="@+id/lrdd_adapter_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/specializations_lrs_name"
+        android:textSize="19dp"
+        android:layout_weight="52"
+        android:singleLine="true">
+    </TextView>
+
+</LinearLayout>

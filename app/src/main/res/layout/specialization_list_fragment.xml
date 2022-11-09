@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/SpecializationsListFragmentContainer"
+    tools:context="ru.kai.mcard.presentation.view.fragment.SpecializationsListFragment">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mSpecializationsListRecyclerView"
+            style="?attr/mainListItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="2dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabSpecializationsList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right|end"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:src="@android:drawable/ic_input_add"
+            app:layout_behavior="@string/fab_behavior_name" />
+
+
+        <include layout="@layout/view_progress" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</FrameLayout>

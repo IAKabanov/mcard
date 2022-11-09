@@ -1,0 +1,63 @@
+<!-- полноэкранный просмотр фотографий -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:background="#0099cc"
+    tools:context="ru.kai.mcard.PhotoViewActivity">
+
+    <ru.kai.mcard.TouchImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ivPhotoView"
+        android:scaleType="centerInside"
+        android:src="@drawable/kaisoft"
+         />
+
+    <ru.kai.mcard.FloatingActionsMenu
+        android:id="@+id/multiple_actions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_addButtonColorNormal="@color/white"
+        fab:fab_addButtonColorPressed="@color/white_pressed"
+        fab:fab_addButtonPlusIconColor="@color/color_fam"
+        fab:fab_labelStyle="@style/menu_labels_style"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_gravity="bottom|right"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true">
+
+        <ru.kai.mcard.FloatingActionButton
+            android:id="@+id/action_photo_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/white"
+            fab:fab_colorPressed="@color/white_pressed"/>
+
+        <ru.kai.mcard.FloatingActionButton
+            android:id="@+id/action_photo_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/white"
+            fab:fab_colorPressed="@color/white_pressed"/>
+
+        <ru.kai.mcard.FloatingActionButton
+            android:id="@+id/action_rotate_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/white"
+            fab:fab_colorPressed="@color/white_pressed"/>
+
+        <ru.kai.mcard.FloatingActionButton
+            android:id="@+id/action_rotate_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/white"
+            fab:fab_colorPressed="@color/white_pressed"/>
+
+    </ru.kai.mcard.FloatingActionsMenu>
+
+</RelativeLayout>

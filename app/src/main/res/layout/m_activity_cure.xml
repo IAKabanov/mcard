@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlCureContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="ru.kai.mcard.MCureActivity"
+    style="?attr/mainBackground">
+
+    <android.support.design.widget.AppBarLayout
+        app:theme="?attr/toolBar"
+        android:id="@+id/mCureAppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/mCureToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:fitsSystemWindows="true"
+            app:title="@string/activity_cure_title">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        style="?attr/tvCaptions"
+        android:id="@+id/tvCureCaption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/common_caption"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="@dimen/filds_margin"
+        android:layout_marginRight="@dimen/filds_margin"
+        android:layout_below="@+id/mCureAppBarLayout"/>
+
+    <LinearLayout
+        style="?attr/styleEditsViewContainer"
+        android:id="@+id/llCureName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/filds_margin"
+        android:layout_marginLeft="@dimen/filds_margin"
+        android:layout_marginRight="@dimen/filds_margin"
+        android:layout_below="@+id/tvCureCaption">
+
+        <EditText
+            style="@style/StyleEditsView"
+            android:id="@+id/editCureName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textAutoComplete" />
+
+    </LinearLayout>
+
+    <TextView
+        style="?attr/tvCaptions"
+        android:id="@+id/tvCuresFeature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="@dimen/filds_margin"
+        android:layout_marginRight="@dimen/filds_margin"
+        android:text="@string/cure_feature"
+        android:layout_below="@+id/llCureName"/>
+
+    <EditText
+        style="?attr/styleEditsViewWithoutContainer"
+        android:id="@+id/editCuresFeature"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="@dimen/filds_margin"
+        android:layout_marginLeft="@dimen/filds_margin"
+        android:layout_marginRight="@dimen/filds_margin"
+        android:hint="@string/cure_feature_hint"
+        android:gravity="top|left"
+        android:layout_below="@+id/tvCuresFeature"/>
+
+
+</RelativeLayout>
+

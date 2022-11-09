@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlDiagnonisContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="ru.kai.mcard.MDiagnosisActivity"
+    style="?attr/mainBackground">
+
+    <android.support.design.widget.AppBarLayout
+        app:theme="?attr/toolBar"
+        android:id="@+id/mDiagnonisAppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/mDiagnonisToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:fitsSystemWindows="true"
+            app:title="@string/diagnosis_title">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        style="?attr/tvCaptions"
+        android:id="@+id/tvDiagnonisCaption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/common_caption"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="@dimen/filds_margin"
+        android:layout_marginRight="@dimen/filds_margin"
+        android:layout_below="@+id/mDiagnonisAppBarLayout"/>
+
+    <EditText
+        style="?attr/styleEditsViewWithoutContainer"
+        android:id="@+id/editDiagnonisName"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:inputType="textMultiLine|text"
+        android:layout_marginTop="@dimen/filds_margin"
+        android:layout_marginLeft="@dimen/filds_margin"
+        android:layout_marginRight="@dimen/filds_margin"
+        android:gravity="top|left"
+        android:layout_below="@+id/tvDiagnonisCaption"/>
+
+    <LinearLayout
+        style="?attr/styleEditsViewContainer"
+        android:id="@+id/llDiagnonisName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/filds_margin"
+        android:layout_marginLeft="@dimen/filds_margin"
+        android:layout_marginRight="@dimen/filds_margin"
+        android:layout_below="@+id/tvDiagnonisCaption"
+        android:visibility="gone">
+
+        <EditText
+            style="@style/StyleEditsView"
+            android:id="@+id/editDiagnonisName1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+

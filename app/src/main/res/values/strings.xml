@@ -1,0 +1,578 @@
+<resources>
+    <string name="app_name">Моя медкарта</string>
+    <string name="mcard_name">Медицинская карта</string>
+    <string name="action_settings">Settings</string>
+
+    // main
+    <string name="app_title">Моя мед. карта</string>
+    <string name="app_title_for_reference_choose">Выбор визита, на котором получено направление.</string>
+    <string name="app_title_for_directions_choose">Выбор визита-направления.</string>
+    <string name="main_but_filter_text">Фильтр</string>
+    <string name="main_but_filter_text_on">Фильтр вкл .</string>
+    <string name="main_but_filter_text_off">Фильтр выкл.</string>
+    <string name="no_vizits">Здесь будут отображаться все Ваши визиты к докторам, на процедуры,
+        на исследования (анализы) - Ваши посещения поликлиник
+        и других мед. учреждений.\nСейчас список визитов пуст.\nНажмите
+        "Добавить", чтобы ввести первый.</string>
+    <string name="no_filtred_vizits">Сейчас список визитов пуст.\nВозможно, выбран неверный фильтр.</string>
+    <string name="main_but_filter_list_open">Выберите, пожалуйста, фильтр из списка.</string>
+    <string name="main_filter_is_on">Не забудьте - включен фильтр.</string>
+    <string name="item_main_visit_choice_question">Какой тип визита будем создавать?</string>
+    <string name="item_main_visit_choice_visit">Визит к доктору на консультацию</string>
+    <string name="item_main_visit_choice_analisis_visit">Визит на исследования - анализы и т.д.</string>
+    <string name="mcard_main_list_for_direction_choice">Не может быть направления с визита исследования. Выберите визит-консультацию.</string>
+
+
+    // удаление визита
+    <string name="deleting_visit_title">Удаление визита...</string>
+    <string name="deleting_visit_question">Действительно удалить визит?</string>
+    <string name="deleting_visit_question_mini">Удалить?</string>
+
+    // общие
+    <string name="common_caption">Название:</string>
+    <string name="common_phones">Телефоны:</string>
+    <string name="loading">Загрузка...</string>
+    <string name="unloading">Выгрузка...</string>
+    <string name="caption_basic">Основное</string>
+    <string name="do_not_show_help_info">Не показывать больше подсказку?</string>
+    <string name="save_visit_question">Визит еще не сохранен. Сохранить?</string>
+    <string name="list_is_empty">Список пуст.</string>
+    <string name="select_item">Выберите или создайте элемент.</string>
+    <string name="must_set_item_name">Нужно ввести наименоание элемента.</string>
+
+    // меню
+    <string name="item_update">Изменить</string>
+    <string name="item_delete">Удалить</string>
+    <string name="item_directions_new">Создать новый</string>
+    <string name="item_directions_choose">Выбрать существующий</string>
+    <string name="item_main_filter_choice">Другой фильтр</string>
+    <string name="item_main_filter_off">Отключить фильтр</string>
+    <string name="item_main_choice_theme">Изменить цветовое оформление</string>
+    <string name="item_main_edit_profiles">Моя семья</string>
+    <string name="item_main_edit_profiles1">Моя группа</string>
+    <string name="item_main_edit_profiles2">Редактировать профили членов семьи</string>
+    <string name="item_main_about">Версия приложения</string>
+    <string name="item_main_backups">Резервное копирование приложения</string>
+
+    // общие кнопки
+    <string name="but_save">сохранить</string>
+    <string name="button_add">Добавить</string>
+    <string name="button_add_to_list">Добавить в список</string>
+    <string name="but_write">записать</string>
+    <string name="but_close">закрыть</string>
+    <string name="but_cancel">отменить</string>
+    <string name="but_apply">применить</string>
+    <string name="button_plus">+</string>
+    <string name="button_open">-></string>
+    <string name="button_ok">OK</string>
+    <string name="but_continue">Продолжить</string>
+    <string name="but_continue_help">Не показывать</string>
+    <string name="but_cancel_help">Пусть будет пока</string>
+    <string name="dialog_positive_button_text">Да</string>
+    <string name="dialog_negative_button_text">Нет</string>
+    <string name="dialog_positive_button_text_create">Создать</string>
+    <string name="dialog_negative_button_text_cancel">Отмена</string>
+
+    // визит
+    <string name="title_activity_visit">Визит</string>
+    <string name="title1_activity_visit">основные параметры</string>
+    <string name="visit_hint_date">дата визита</string>
+    <string name="visit_hint_time">время визита</string>
+    <string name="visit_hint_reference">кто направил</string>
+    <string name="visit_hint_clinik">клиника</string>
+    <string name="visit_hint_doctor">доктор (ФИО)</string>
+    <string name="visit_hint_specialization">доктор (специализация)</string>
+    <string name="visit_hint_diagnosis">диагноз</string>
+    <string name="visit_tv_comment">Комментарий:</string>
+    <string name="visit_but_directions">Направления</string>
+    <string name="visit_but_cures">Назначения</string>
+    <string name="visit_but_additionally">еще</string>
+    <string name="visit_tab_recommendations">Рекомендации</string>
+    <string name="visits_fragment_main_reference_caption">Направлено с визита:</string>
+    <string name="visits_fragment_directions_list">Список направлений на анализы и другие исследования (УЗИ, МРТ и т.д.), а также на консультации к другим врачам, в том числе и на повторный прием.</string>
+    <string name="visits_fragment_directions_list_help">Введите тип исследования и затем добавьте визит, на котором это исследование будет проводиться. Аналогично, выбирайте специализацию доктора, к которому направили, и затем добавляйте визит, на который пойдете (или сходили).</string>
+    <string name="visits_fragment_directions_list_fab_add_directions_an_type">Добавить тип исследования</string>
+    <string name="visits_fragment_directions_list_fab_add_directions_doctors_specialisation">Добавить специализацию доктора</string>
+    <string name="visits_fragment_directions_list_hint_analisis_visit">добавьте визит-исследование</string>
+    <string name="visits_fragment_directions_list_hint_visit">добавьте визит-консультацию</string>
+    <string name="visits_fragment_directions_add_visit_dialog_title">Создадим новый визит или выберем существующий?</string>
+    <string name="visits_fragment_directions_unlink_question">Вы действительно хотите отвязать направление от этого визита?</string>
+    <string name="visits_fragment_cures_list_caption">Лист назначений (лекарства, уколы и другие процедуры):</string>
+    <string name="visits_fragment_cures_list_help">Введите назначение и затем, если необходимо, добавьте визит-процедуру, на котором это назначение будет выполняться.</string>
+    <string name="visits_fragment_cures_list_help_old">Введите назначение.</string>
+    <string name="visits_fragment_cures_list_hint_prosedures_visit">добавьте (если нужно) визит на процедуру</string>
+    <string name="visits_fragment_recommendations_list">Рекомендации по режиму:</string>
+    <string name="visits_fragment_directions_chosen_different_types">Выбран неверный тип визита.</string>
+    <string name="visits_fragment_directions_chosen_bad_visit">Нельзя выбирать "себя" как направление. Выбран неверный визит.</string>
+    <string name="visit_must_not_delete_type_cures">Нельзя удалять визит. Сначала удалите назначения.</string>
+    <string name="visit_must_not_delete_type_recommendations">Нельзя удалять визит. Сначала удалите рекомендации.</string>
+    <string name="visit_must_not_delete_type_directions">Нельзя удалять визит. Сначала удалите направления.</string>
+    <string name="visit_must_not_delete_type_analises_list">Нельзя удалять визит. Он используется в визитах-исследованиях, как направление.</string>
+    <string name="visit_must_not_delete_type_photos">Нельзя удалять визит. Сначала удалите фотографии.</string>
+
+
+    // визит (дополнительно)
+    <string name="visit_additionally_title_activity">Визит</string>
+    <string name="visit_additionally_title1_activity">дополнительные параметры</string>
+    <string name="visit_additionally_tv_diagnosis">Диагноз:</string>
+    <string name="visit_add_title_directions">Направления, выданные на визите</string>
+    <string name="visit_add_title_cures">Назначения, рекомендации</string>
+    <string name="visit_add_tv_directions">Список направлений на дообследования, на анализы и другие
+        исследования (УЗИ, МРТ и т.д.), на консультации других докторов, а также на повторный прием:</string>
+    <string name="visit_add_tv_cures">Лист назначений (лекарства, уколы и другие процедуры):</string>
+    <string name="visit_add_tv_recommendations">Рекомендации по режиму:</string>
+    <string name="visit_additionally_tv_cures">Назначения:</string>
+    <string name="visit_additionally_tv_reference_old">От кого направление (кто направил):</string>
+    <string name="visit_additionally_tv_reference">Визит, на котором получено направление:</string>
+    <string name="visit_additionally_hint_edit_reference_old">визит направления</string>
+    <string name="visit_additionally_hint_edit_reference">кто направил</string>
+    <string name="visit_additionally_hint_edit_diagnosis">введите диагноз</string>
+    <string name="visit_additionally_hint_lvVisitsDirectionsList">здесь можно отразить направления, если Вас направили к другому доктору или на процедуры. Для этого нужно создать новый визит с будущей датой и выбрать доктора</string>
+    <string name="visit_additionally_but_Photo">фотографии</string>
+    <string name="visit_additionally_but_Save">к Визиту (осн.)</string>
+
+    // клиники
+    <string name="cliniks_title_activity">Мед. учреждения (поликлиники)</string>
+    <string name="cliniks_lrc_name">clinik_name</string>
+    <string name="cliniks_lrc_adress">clinik_adress</string>
+    <string name="cliniks_caption">В этом списке находятся мед. учреждения, которые Вы когда-либо посещали. Нажмите Добавить для внесение в список новой клиники.</string>
+    <string name="cliniks_caption_m">В этом списке находятся мед. учреждения, которые Вы когда-либо посещали.</string>
+    <string name="cliniks_must_not_delete">Нельзя удалять клинику. Она используется в визитах.</string>
+
+    // клиника
+    <string name="clinik_title_activity">Мед. учреждение (поликлиника)</string>
+    <string name="clinik_adress">Доп. сведения (адрес):</string>
+    <string name="clinik_save_error">Чтобы записать, необходимо заполнить название мед. учреждения.</string>
+
+    // доктора
+    <string name="doctors_title_activity">Список докторов (ФИО)</string>
+    <string name="doctors_lrd_name">doctor</string>
+    <string name="doctors_caption">В этом списке находятся доктора, с которым Вы когда-либо взаимодействовали. Нажмите Добавить для внесение в список нового доктора.</string>
+    <string name="doctors_list_help">В этом списке находятся доктора, с которым Вы когда-либо взаимодействовали.</string>
+    <string name="doctors_must_not_delete">Нельзя удалять доктора. Он используется в визитах.</string>
+
+    // доктор
+    <string name="doctor_title_activity">Доктор (редактирование)</string>
+    <string name="doctor_caption_name">Имя:</string>
+    <string name="doctor_hint_name">ФИО</string>
+    <string name="doctor_caption_specialization">Специализация:</string>
+    <string name="doctor_save_error">Чтобы записать, необходимо заполнить ФИО доктора.</string>
+
+    // специализации докторов
+    <string name="specializations_title_activity">Специализации докторов</string>
+    <string name="specializations_lrs_name">specialization</string>
+    <string name="specializations_must_not_delete">Нельзя удалять специализацию. Она используется у докторов и в визитах.</string>
+
+    // специализация редактирование
+    <string name="specialization_title_activity">Специализация докторов (редактирование)</string>
+    <string name="specialization_save_error">Чтобы записать, необходимо заполнить наименование специализации.</string>
+
+    // назначения по визиту
+    <string name="visits_cures_title">Назначение по визиту</string>
+    <string name="visits_cures_hint_cure">назначение (препарат, процедура)</string>
+    <string name="visits_cures_hint_comment">порядок приема (например, 2 раза в день до еды)</string>
+    <string name="visits_cures_save_error">Чтобы записать, необходимо заполнить назначение.</string>
+    <string name="lrvc_cures_name">cures_name</string>
+    <string name="lrvc_cures_descr">cures_descr</string>
+
+    // назначения (какие бывают) - препараты, лекарства, процедуры
+    <string name="cures_title">Лекарства, процедуры, препараты</string>
+    <string name="cures_lrcu_name">cures</string>
+    <string name="cures_save_error">Чтобы записать, необходимо заполнить название назначения.</string>
+    <string name="cures_must_not_delete">Нельзя удалять назначение. Оно используется в визитах.</string>
+
+    // назначение (редактирование)
+    <string name="activity_cure_title">Лекарство, процедура, препарат (редактирование)</string>
+    <string name="cure_feature">Характеристика</string>
+    <string name="cure_feature_hint">Капсулы, ампулы или таблетки и т.д., а также дозировка...</string>
+
+    // рекомендации (по режиму)
+    <string name="recommendations_lrd_name">recommendation</string>
+    <string name="activity_recommendations_title">Рекомендации по режиму</string>
+
+    // рекомендация по режиму(редактирование)
+    <string name="activity_recommendation_title">Рекомендация по режиму (редактирование)</string>
+    <string name="recommendations_save_error">Чтобы записать, необходимо заполнить рекомендацию.</string>
+    <string name="recommendation_must_not_delete">Нельзя удалять рекомендацию. Она используется в визитах.</string>
+
+    // диагнозы
+    <string name="diagnoses_title">Диагнозы</string>
+    <string name="diagnoses_lrdi_name">diagnoses</string>
+
+    // диагноз
+    <string name="diagnosis_title">Диагноз</string>
+    <string name="diagnosis_save_error">Чтобы записать, необходимо заполнить название диагноза.</string>
+    <string name="diagnosis_must_not_delete">Нельзя удалять диагноз. Он используется в визитах.</string>
+
+    // виды исследований
+    <string name="analises_types_title">Виды исследований</string>
+    <string name="analises_types_lrat_name">analises_types</string>
+    <string name="analises_types_must_not_delete">Нельзя удалять вид исследования. Он используется в визитах.</string>
+
+    // вид исследования (редактирование)
+    <string name="analisis_type_title">Вид исследования (редактирование)</string>
+    <string name="analisis_type_error">Чтобы записать, необходимо заполнить наименование вида исследования.</string>
+
+    // визит-исследование
+    <string name="analisis_visit_title">Визит на исследование</string>
+    <string name="analisis_visit_hint_date">дата исследования</string>
+    <string name="analisis_visit_hint_time">время исследования</string>
+    <string name="analisis_visit_hint_analisis_type">вид исследования</string>
+    <string name="tab_caption_analisis_visit_analises">Исследования</string>
+    <string name="tab_caption_analisis_visit_references">Ссылки</string>
+    <string name="analisis_visits_fragment_directions">Список анализов и других исследований (УЗИ, МРТ и т.д.)</string>
+    <string name="analisis_visits_fragment_directions_hint_ref_visit">Без направления (нет направляющего визита).</string>
+    <string name="analisis_visit_must_not_delete_type_analises_list">Нельзя удалять визит-исследование. Сначала нужно удалить исследования из таблицы.</string>
+
+    // меню mcard_main_drawer
+    <string name="mcard_main_drawer_menu_clinics">Мед. учреждения</string>
+    <string name="mcard_main_drawer_menu_doctors">Доктора</string>
+    <string name="mcard_main_drawer_menu_specialisations">Специализации докторов</string>
+    <string name="mcard_main_drawer_menu_analises_types">Виды исследований</string>
+    <string name="mcard_main_drawer_menu_diagnoses">Диагнозы</string>
+    <string name="mcard_main_drawer_menu_cures">Виды назначений</string>
+    <string name="mcard_main_drawer_menu_recommendations">Рекомендации</string>
+    <string name="mcard_main_drawer_menu_fast_filters">Быстрые фильтры</string>
+    <string name="mcard_main_drawer_menu_filter_ext">Расширенный фильтр</string>
+    <string name="mcard_main_drawer_menu_filter_off">Отключить фильтр</string>
+    <string name="mcard_main_drawer_menu_group_lists_title">Списки</string>
+    <string name="mcard_main_drawer_menu_group_filters_title">Фильтры</string>
+    <string name="mcard_main_drawer_menu_group_add_title">Дополнительно</string>
+
+
+    // фотографии
+    <string name="photo_add_title">Добавление фотографии</string>
+    <string name="photo_add_tv_name">Название фотографии:</string>
+    <string name="photo_add_hint_name">введите название фотографии:</string>
+    <string name="photo_add_name_error">Необходимо заполнить название фотографии.</string>
+    <string name="photo_add_uri_error">Нет фотографии...</string>
+    <string name="photo_add_btn_photo_change">изменить фото</string>
+    <string name="photos_lrph_name">photo_name</string>
+
+    // фильтры, список фильтров
+    <string name="filter_list_title">Список фильтров</string>
+    <string name="filter_list_caption_lite">В этом списке находятся сохраненные фильтры, которыми Вы когда-либо пользовались.</string>
+    <string name="filter_list_caption">В этом списке находятся сохраненные фильтры, которыми Вы когда-либо пользовались. Нажмите "Добавить", чтобы создать новый расширенный фильтр.</string>
+    <string name="filter_list_lrf_filters_name">filters</string>
+
+    // фильтр расширенный
+    <string name="filter_ext_title">Фильтр расширенный</string>
+    <string name="filter_ext_caption_without_date">не показывать без даты</string>
+    <string name="filter_ext_hint_first_date">дата нач.</string>
+    <string name="filter_ext_hint_last_date">дата кон.</string>
+    <string name="filter_ext_filter_name">Имя </string>
+    <string name="filter_ext_hint_filter_name">введите название фильтра</string>
+    <string name="filter_ext_error_first_date">начальная дата не может быть больше конечной</string>
+    <string name="filter_ext_error_last_date">конечная дата не может быть меньше начальной</string>
+    <string name="filter_ext_saved_filters_list">список сохраненных фильтров</string>
+    <string name="filter_ext_hint_analisis_type">вид исследования (анализа)</string>
+
+    // темы
+    <string name="themes_choise_toolbar_title">Цветовое оформление</string>
+    <string name="themes_choise_title">Выберите тему по душе</string>
+    <string name="themes_standart_green">Зеленый стандарт</string>
+    <string name="themes_standart_lemon">Янтарный стандарт</string>
+    <string name="themes_standart_pink">Розовый стандарт</string>
+    <string name="themes_standart_cornflower">Васильковый стандарт</string>
+
+    <string name="themes_new_year">Медовые мотивы</string>
+    <string name="themes_green_peas">Сочный горошек</string>
+
+    // список профилей
+    <string name="list_profiles_title">Моя семья</string>
+    <string name="list_profiles_title1">Title</string>
+    <string name="list_profiles_title11">Участники моей группы</string>
+    <string name="list_profiles_title2">Профили (редактирование)</string>
+    <string name="list_profiles_in_app_caption1">Title.</string>
+    <string name="list_profiles_in_app_caption">Ведение медицинских карт для других членов Вашей семьи ограничено в бесплатной версии. Нажмите на кнопку ниже для снятия ограничения.</string>
+    <string name="list_profiles_lrp_name">profiles</string>
+    <string name="list_profiles_profile_deleted">Профиль удален</string>
+    <string name="list_profiles_caption">В этом списке находятся карточки членов Вашей семьи, мед. карты которых Вы ведете. Нажмите ДОБАВИТЬ для внесение в список нового члена семьи.</string>
+    <string name="list_profiles_caption_help">В этом списке находятся карточки членов Вашей семьи, мед. карты которых Вы ведете.</string>
+    <string name="first_profile_name">Мой профиль</string>
+    <string name="list_profiles_purchase_error">Ошибка покупки. Повторите еще раз.</string>
+    <string name="list_profiles_verification_error">Ошибка верификации при покупке. Повторите еще раз.</string>
+    <string name="list_profiles_purchase_sucsess">Покупка совершена.</string>
+
+    <string name="content_description_app_loading_image">App loading image</string>
+
+    // редактирование профиля
+    <string name="edit_profiles_toolbar_title">Профиль (редактирование)</string>
+    <string name="edit_profiles_title">Карточка члена семьи</string>
+    <string name="edit_profiles_sex_caption">Пол</string>
+    <string name="edit_profiles_sex_m">Мужской</string>
+    <string name="edit_profiles_sex_w">Женский</string>
+    <string name="edit_profiles_birthday_caption">День рождения</string>
+    <string name="edit_profiles_birthday">введите день рождения</string>
+    <string name="edit_profiles_btn_save">применить профиль</string>
+    <string name="edit_profiles_btn_sale">Хочу неограниченно вести медкарты для всех членов моей семьи</string>
+    <string name="edit_profiles_delete_last_profile">Нельзя удалять единственный профиль</string>
+    <string name="edit_profiles_delete_profile_title">Удаление профиля</string>
+    <string name="edit_profiles_delete_profile_message">Внимание! При удалении профиля, все визиты с ним связанные также будут удалены. Продолжить?</string>
+    <string name="edit_profiles_delete_profile_positive_button_text">Да</string>
+    <string name="edit_profiles_delete_profile_negative_button_text">Нет</string>
+    <string name="edit_profiles_profile_enabled_false">Доступ к данному профилю в бесплатной версии ограничен (более 5 визитов).</string>
+
+    // удаление файла
+    <string name="delete_file">Удаление файла...</string>
+    <string name="delete_photo">Удалить фотографию?</string>
+
+    // текст about
+    <string name="text_about">Версия приложения: </string>
+    <string name="text_version">Версия приложения: 1.3.10 (36)</string>
+
+    // backups
+    <string name="backup_title">Резервное копирование приложения</string>
+    <string name="backup_btn_onbackup">Сохранить копию приложения в облако</string>
+    <string name="backup_btn_onresrore">Восстановить приложение из облака</string>
+    <string name="backup_btn_backup_done">Резервная копия отправлена в облако</string>
+    <string name="backup_btn_restore_done">Резервная копия вызвана из облака</string>
+    <string name="backup_hint_backup_done">Дата и время отправки в облако</string>
+    <string name="backup_hint_backup_in_cloud_done">bm прошел (Дата и время)</string>
+    <string name="backup_hint_backup_in_cloud_done_yes_no">bm забрал backup в облако (да, нет)</string>
+    <string name="backup_hint_backup_in_cloud_date_time">Дата и время попадания backup-а в облако</string>
+    <string name="backup_hint_backup_old_state"> backup OldState</string>
+    <string name="backup_hint_backup_new_state_before_backup">NewState before Backup</string>
+    <string name="backup_hint_backup_new_state_after_backup">NewState after Backup</string>
+    <string name="backup_hint_restore_new_state">restore NewState</string>
+    <string name="backup_hint_on_restore_done">onRestore выполнена</string>
+
+    <string name="backup_sdcard_title">Копирование на SD карту</string>
+    <string name="backup_sdcard_btn_backup">Сохранить данные приложения на SD карту</string>
+    <string name="backup_sdcard_btn_resrore">Восстановить приложение с SD карты</string>
+    <string name="backup_sdcard_text_choose_dir">Каталог на SD карте для хранения backup-а</string>
+    <string name="backup_sdcard_backup_begin">Сохраняем данные приложения на SD карту</string>
+    <string name="backup_sdcard_backup_fin">Данные приложения сохранены на SD карту</string>
+    <string name="backup_sdcard_backup_bad_dir">Невозможно записать в выбранный каталог. Пожалуйста, выберите другой.</string>
+    <string name="backup_sdcard_restore_begin">Восстанавливаем данные приложения с SD карты</string>
+    <string name="backup_sdcard_restore_fin">Данные приложения восстановлены с SD карты. Нужно перезагрузить приложение.</string>
+    <string name="backup_sdcard_backup_attantion">Внимание!</string>
+    <string name="backup_sdcard_dir_clea">Перед созданием резервной копии выбранный каталог будет очищен. Продолжить?</string>
+    <string name="backup_sdcard_backup_is_epsend">Выбранный файл не является backup-ом приложения.</string>
+    <string name="backup_sdcard_backup_title">Сохранение данных</string>
+    <string name="backup_sdcard_restore_title">Восстановление данных</string>
+    <string name="backup_sdcard_restore_text_choose_file">Файл на SD карте для восстановления</string>
+    <string name="backup_sdcard_restore_text_choose_file_hint">Выберите файл на SD карте для восстановления</string>
+    <string name="backup_sdcard_is_epsend">На Вашем устройстве SD карта не определена.</string>
+    <string name="backup_sdcard_help"> \n<b>Внимание!</b> Не важно, имеется ли на Вашем устройстве SD карта или нет.\n
+        Вы можете сохранить резервную копию в любое доступное место.
+                                        Затем скопировать ее, на компьютер.\n
+        В последствии Вы перенесете сохраненную копию на новый смартфон
+                                        и восстановите данные приложения.</string>
+
+    <string name="backup_sdcard_backup_help"> \nВыберите каталог для сохранения файла резервной копии, затем нажмите кнопку для сохранения данных приложения в файл в выбранный каталог.\n
+        Вы можете создать новый каталог в файловой системе для хранений резервных копий.\n
+        Файл резервной копии имеет расширение <b>.mcc</b> и содержит в названии дату и время создания.\n\n
+        Внимание! Если у Вас версия android KITKAT (4.4.x), то воспользуйтесь предложенным каталогом для сохранения резервных копий.</string>
+
+    <string name="backup_sdcard_restore_help"> \nВыберите каталог и файл резервной копии, затем нажмите кнопку для восстановления данных приложения.\n
+        Файл резервной копии имеет расширение <b>.mcc</b> и содержит в названии дату и время создания.\n
+        После восстановления перезагрузите приложение (закройте его, выгрузите из памяти и затем запустите его заново).\n</string>
+
+    <string name="choose_dir_title">Выбор каталога</string>
+    <string name="choose_file_title">Выбор файла</string>
+    <string name="choose_dir_btn_open_back">open_back</string>
+    <string name="choose_dir_btn_open_go">open_go</string>
+    <string name="choose_dir_create_dir_dialog_title">Создание каталога...</string>
+    <string name="choose_dir_create_dir_dialog_enter_dir_name">Введите имя для нового каталога</string>
+    <string name="choose_dir_create_dir_must_enter_dir_name">Необходимо ввести имя для нового каталога</string>
+
+
+    // detail fragment
+    <string name="detail_fragment_create">Создание нового</string>
+    <string name="detail_fragment_edit">Редактирование</string>
+
+    <string-array name="specializations_init">
+        <item>алерголог</item>
+        <item>анестезиолог</item>
+        <item>дерматолог</item>
+        <item>диетолог</item>
+        <item>гастроэнтеролог</item>
+        <item>гинеколог</item>
+        <item>иммунолог</item>
+        <item>кардиолог</item>
+        <item>косметолог</item>
+        <item>лаборант</item>
+        <item>маммолог</item>
+        <item>мануальный терапевт</item>
+        <item>массажист</item>
+        <item>медсестра</item>
+        <item>невролог</item>
+        <item>окулист</item>
+        <item>онколог</item>
+        <item>ЛОР(отолоринголог)</item>
+        <item>педиатр</item>
+        <item>проктолог</item>
+        <item>психиатр</item>
+        <item>психолог</item>
+        <item>пульмонолог</item>
+        <item>ревматолог</item>
+        <item>рентгенолог</item>
+        <item>репродуктолог</item>
+        <item>сексолог</item>
+        <item>сексопатолог</item>
+        <item>стоматолог</item>
+        <item>стоматолог-терапевт</item>
+        <item>стоматолог-ортодонт</item>
+        <item>стоматолог-ортопед</item>
+        <item>стоматолог-пародонтолог</item>
+        <item>стоматолог-хирург</item>
+        <item>терапевт</item>
+        <item>травматолог</item>
+        <item>травматолог-ортопед</item>
+        <item>уролог</item>
+        <item>физиолог</item>
+        <item>физиотерапевт</item>
+        <item>флеболог</item>
+        <item>фтизиатр</item>
+        <item>хирург</item>
+        <item>эндокринолог</item>
+    </string-array>
+
+    <string-array name="cures_init">
+        <item>аквамарис</item>
+        <item>арбидол</item>
+        <item>аспирин</item>
+        <item>валокордин</item>
+        <item>виброцил</item>
+        <item>вольтарен</item>
+        <item>галазолин</item>
+        <item>дибазол</item>
+        <item>диафлекс</item>
+        <item>дифлюкан</item>
+        <item>иберогаст</item>
+        <item>ибупрофен</item>
+        <item>ингавирин</item>
+        <item>кагоцел</item>
+        <item>кетотифен</item>
+        <item>кордиамин</item>
+        <item>магне B6</item>
+        <item>массаж</item>
+        <item>мексидол</item>
+        <item>нурофен</item>
+        <item>но-шпа</item>
+        <item>оциллококцинум</item>
+        <item>папаверин</item>
+        <item>пимафуцин</item>
+        <item>пирацетам</item>
+        <item>проспан</item>
+        <item>спазган</item>
+        <item>спазмалгон</item>
+        <item>стрептоцид</item>
+        <item>тавегил</item>
+        <item>тридерм</item>
+        <item>тромбо-асс</item>
+        <item>фенебут</item>
+        <item>фестал</item>
+        <item>флюкостат</item>
+        <item>фулфлекс</item>
+        <item>циклоферон</item>
+        <item>эваменол</item>
+        <item>энап</item>
+    </string-array>
+
+    <string-array name="diagnoses_init">
+        <item>ангина</item>
+        <item>бронхит</item>
+        <item>грипп</item>
+        <item>лорингит</item>
+        <item>ОРВИ</item>
+        <item>трахеит</item>
+    </string-array>
+
+    <string-array name="analises_types_init">
+        <item>анаскопия</item>
+        <item>МРТ</item>
+        <item>УЗИ брюшной полости</item>
+        <item>УЗИ молочной железы</item>
+        <item>УЗИ почек</item>
+        <item>УЗИ простаты</item>
+        <item>УЗИ сердца</item>
+        <item>УЗИ щитовидной железы</item>
+        <item>гастроскопия </item>
+        <item>ирригоскопия </item>
+        <item>кал общий анализ</item>
+        <item>КТ - компьютерная томография</item>
+        <item>кольпоскопия</item>
+        <item>кровь на сахар</item>
+        <item>кровь на билирубин</item>
+        <item>кровь на биохимию</item>
+        <item>кровь на ТТГ</item>
+        <item>кровь общий анализ</item>
+        <item>маммография</item>
+        <item>моча на сахар</item>
+        <item>моча общий анализ</item>
+        <item>ректороманоскопия</item>
+        <item>рентгенография</item>
+        <item>ЭКГ</item>
+        <item>ФГДС</item>
+        <item>фиброколоноскопия</item>
+        <item>флюорография</item>
+
+    </string-array>
+
+    <string-array name="recommendations_init">
+        <item>алкоголь умеренно</item>
+        <item>ароматерапия</item>
+        <item>высыпаться</item>
+        <item>избегать переохлаждения</item>
+        <item>исключить курение</item>
+        <item>лечебная физкультура</item>
+        <item>поменьше сладкого</item>
+        <item>постельный режим</item>
+        <item>ограничение физических нагрузок</item>
+    </string-array>
+
+    <string name="title_activity_photo_view">PhotoViewActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_themes_choise">ThemesChoiseActivity</string>
+    <string name="title_activity_profiles">ProfilesActivity</string>
+
+    // Фотографии
+    <string name="title_activity_scrolling">Фотографии</string>
+    <string name="title_activity_photo_preview">PhotoPreviewActivity</string>
+
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_analisis_visit_m">AnalisisVisitMActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_visit_m">VisitMActivity</string>
+    <string name="title_activity_manalises_types">MAnalisesTypesActivity</string>
+    <string name="title_activity_mcard">Список визитов</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    // Политика конфиденциальности
+    <string name="privacy_policy_accept_text">Прежде, чем начать работу ознакомтесь, пожалуйста, с политикой конфиденциальности.</string>
+    <string name="privacy_policy_accept_check_text">Принимаю.</string>
+    <string name="privacy_policy_title">Политика конфиденциальности</string>
+    <string name="privacy_policy_title_U"><u>Политика конфиденциальности</u></string>
+    <string name="privacy_policy_text">
+        Настоящая Политика конфиденциальности действует в отношении всей информации, которую мобильное приложение «Моя медкарта» может получить о Пользователе во время использования мобильного приложения.\n
+        Использование мобильного приложения «Моя медкарта» означает полное и безусловное согласие Пользователя с настоящей политикой конфиденциальности и указанными в ней целями и условиями обработки его персональных данных.\n
+        «Персональные данные» - это любая информация, относящаяся к прямо или косвенно определенному физическому лицу (субъекту персональных данных).\n
+        Настоящая Политика конфиденциальности применяется только к мобильному приложению «Моя медкарта» и не несет ответственности за общественно доступные  ресурсы третьих лиц, на которые Пользователь может перейти по ссылкам или сохранить свои данные, как резервную копию.\n
+        Администрация мобильного приложения «Моя медкарта» не проверяет достоверность персональных данных, предоставляемых Пользователем.\n
+        Пользователь мобильного приложения «Моя медкарта», размещая информацию о себе и членах своей семьи, добровольно предоставляет доступ к этой информации и персональным данным мобильному приложению «Моя медкарта».\n
+        Обработка Персональных данных включает в себя любые действия и/или совокупность действий, которые связаны со сбором, регистрацией, хранением, адаптацией, изменением, обновлением, использованием и распространением (реализацией, передачей), удалением Персональных данных Пользователя и членов его семьи с целью обеспечения работы сервисов мобильного приложения «Моя медкарта».\n
+        Объем Персональных данных Пользователя, по отношению к которым осуществляется обработка и которые могут быть включены в базы персональных данных, определяется как любая информация о Пользователе и членах его семьи, которая размещается пользователем в мобильном приложении «Моя медкарта».\n
+        Принимая данную Политику, пользователь подтверждает, что ему понятны его права, определенные Федеральным законом РФ № 152-ФЗ «О персональных данных», а также цель сбора, хранения и обработки его персональных данных. Пользователь также дает согласие, что срок обработки его персональных данных является неограниченным.\n
+        Пользователь может в любой момент изменить (обновить, дополнить) предоставленные им персональные данные или их часть, а также параметры их конфиденциальности, воспользовавшись функцией редактирования и настройки доступа к личной информации.\n
+        Целью сбора, хранения и обработки персональных данных является предоставление пользователю персонализированных сервисов мобильного приложения «Моя медкарта», в том числе: доступ в личный раздел, авторизация, таргетирование рекламных материалов, в том числе направление уведомлений, запросов и информации, касающихся использования мобильного приложения «Моя медкарта», оказания услуг, обработка запросов пользователя, а также другие сервисы мобильного приложения «Моя медкарта».\n
+        В случае несогласия с условиями Политики конфиденциальности Пользователь должен прекратить использование мобильного приложения «Моя медкарта».\n
+    </string>
+
+    // поведение fab при скроллинге
+    <string name="fab_behavior_name">ru.kai.mcard.presentation.view.FAB_Hide_on_Scroll</string>
+
+</resources>

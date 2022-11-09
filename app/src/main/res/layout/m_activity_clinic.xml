@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlClinicsContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="ru.kai.mcard.MClinicActivity"
+    style="?attr/mainBackground">
+
+    <android.support.design.widget.AppBarLayout
+        app:theme="?attr/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mClinicAppBarLayout">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mClinicToolbar"
+            android:minHeight="?attr/actionBarSize"
+            android:fitsSystemWindows="true"
+            app:title="@string/clinik_title_activity">
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        style="?attr/tvCaptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/common_caption"
+        android:id="@+id/tvClinicsCaption"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="@dimen/filds_margin"
+        android:layout_marginRight="@dimen/filds_margin"
+        android:layout_below="@+id/mClinicAppBarLayout"/>
+
+    <LinearLayout
+        style="?attr/styleEditsViewContainer"
+        android:id="@+id/llClinicsName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/filds_margin"
+        android:layout_marginLeft="@dimen/filds_margin"
+        android:layout_marginRight="@dimen/filds_margin"
+        android:layout_below="@+id/tvClinicsCaption">
+
+        <EditText
+            style="@style/StyleEditsView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editClinicsName"
+            android:inputType="textCapSentences" />
+
+    </LinearLayout>
+
+    <TextView
+        style="?attr/tvCaptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/common_phones"
+        android:id="@+id/tvClinicsPhones"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="@dimen/filds_margin"
+        android:layout_marginRight="@dimen/filds_margin"
+        android:visibility="gone"
+        android:layout_below="@+id/llClinicsName"/>
+
+    <LinearLayout
+        style="?attr/styleEditsViewContainer"
+        android:id="@+id/llClinicsPhones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/filds_margin"
+        android:layout_marginLeft="@dimen/filds_margin"
+        android:layout_marginRight="@dimen/filds_margin"
+        android:visibility="gone"
+        android:layout_below="@+id/tvClinicsPhones">
+
+        <EditText
+            style="@style/StyleEditsView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editClinicsPhones"
+            android:inputType="phone" />
+
+    </LinearLayout>
+
+    <TextView
+        style="?attr/tvCaptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="@dimen/filds_margin"
+        android:layout_marginRight="@dimen/filds_margin"
+        android:text="@string/clinik_adress"
+        android:id="@+id/tvClinicAdress"
+        android:layout_below="@+id/llClinicsPhones"/>
+
+    <EditText
+        style="?attr/styleEditsViewWithoutContainer"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:inputType="textMultiLine|textCapSentences"
+        android:layout_marginTop="@dimen/filds_margin"
+        android:layout_marginLeft="@dimen/filds_margin"
+        android:layout_marginRight="@dimen/filds_margin"
+        android:id="@+id/editClinicsAdress"
+        android:textAlignment="gravity"
+        android:gravity="top|left"
+        android:nestedScrollingEnabled="true"
+        android:layout_below="@+id/tvClinicAdress"/>
+
+
+</RelativeLayout>
+

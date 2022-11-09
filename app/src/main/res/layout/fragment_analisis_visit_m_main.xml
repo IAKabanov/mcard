@@ -1,0 +1,155 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    tools:context=".MAnalisisVisitMainFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:id="@+id/llAnalisisVisitMCommon">
+
+        <LinearLayout
+            style="?attr/styleEditsViewContainer"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/filds_margin"
+            android:layout_marginRight="@dimen/filds_margin"
+            android:layout_marginTop="@dimen/filds_margin">
+
+            <EditText
+                style="@style/StyleEditsView"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:visibility="invisible" />
+
+            <TextView
+                style="@style/StyleEditsView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/tvAnalisisVisitsMDate"
+                android:hint="@string/analisis_visit_hint_date"
+                android:gravity="center|right"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:paddingRight="@dimen/filds_margin"/>
+
+            <TextView
+                style="?attr/tvCaptions"
+                android:layout_width="@dimen/filds_margin"
+                android:layout_height="match_parent" />
+
+            <TextView
+                style="@style/StyleEditsView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/tvAnalisisVisitsMTime"
+                android:hint="@string/analisis_visit_hint_time"
+                android:gravity="center|left"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:paddingLeft="@dimen/filds_margin"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            style="?attr/styleEditsViewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/filds_margin"
+            android:layout_marginLeft="@dimen/filds_margin"
+            android:layout_marginRight="@dimen/filds_margin">
+
+            <AutoCompleteTextView
+                style="@style/StyleEditsView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editAnalisisVisitsMClinic"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@+id/butOpenAnalisisMClinics"
+                android:ems="10"
+                android:hint="@string/visit_hint_clinik"
+                android:inputType="textCapSentences"
+                android:lines="1"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:completionThreshold="1" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=">"
+                android:id="@+id/butOpenAnalisisMClinics"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="false"
+                android:layout_alignBottom="@+id/editAnalisisVisitsMClinic" />
+        </RelativeLayout>
+
+        <LinearLayout
+            style="?attr/styleEditsViewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/filds_margin"
+            android:layout_marginRight="@dimen/filds_margin"
+            android:layout_marginTop="@dimen/filds_margin">
+
+            <TextView
+                style="?attr/tvCaptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/visit_tv_comment"
+                android:id="@+id/tvAnalisisVisitsMComment" />
+
+            <EditText
+                style="?attr/styleEditsViewWithoutContainer"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/editAnalisisVisitsMComment"
+                android:scrollbars="vertical"
+                android:gravity="top|left"
+                android:nestedScrollingEnabled="true" />
+        </LinearLayout>
+
+        <Button
+            style="?attr/btnStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/butshowActivityVisitMPhoto"
+            android:layout_marginTop="@dimen/filds_margin"
+            android:layout_marginLeft="@dimen/filds_margin"
+            android:layout_marginRight="@dimen/filds_margin"
+            android:drawableLeft="@drawable/ic_linked_camera_vector_black_24dp"
+            android:paddingLeft="44dp"
+            android:paddingRight="64dp"
+            android:text="@string/visit_additionally_but_Photo"/>
+
+        <Button
+            style="?attr/btnStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/butshowActivityVisitMPhotoTest"
+            android:layout_marginTop="@dimen/filds_margin"
+            android:layout_marginLeft="@dimen/filds_margin"
+            android:layout_marginRight="@dimen/filds_margin"
+            android:drawableLeft="@drawable/ic_linked_camera_vector_black_24dp"
+            android:paddingLeft="44dp"
+            android:paddingRight="64dp"
+            android:visibility="gone"
+            android:text="@string/visit_additionally_but_Photo"/>
+
+
+    </LinearLayout>
+
+</FrameLayout>

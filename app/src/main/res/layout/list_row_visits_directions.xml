@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    style="?attr/tvListItem">
+
+   <TextView
+       android:id="@+id/lrvd_adapter_directions_index"
+       android:layout_width="1dp"
+       android:layout_height="wrap_content"
+       android:visibility="invisible"
+       android:singleLine="true">
+   </TextView>
+
+   <TextView
+       android:id="@+id/lrvd_adapter_directions_id"
+       android:layout_width="1dp"
+       android:layout_height="wrap_content"
+       android:visibility="invisible">
+   </TextView>
+
+    <TextView
+        android:id="@+id/lrvd_adapter_directions_type"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:visibility="invisible">
+    </TextView>
+
+   <TextView
+       android:id="@+id/lrvd_adapter_directions_visits_view"
+       android:layout_width="400dp"
+       android:layout_height="wrap_content"
+       android:text="@string/lrvc_cures_name"
+       android:singleLine="true"
+       android:layout_gravity="center_vertical"
+       android:gravity="fill_horizontal|center_vertical"
+       android:layout_weight="1">
+   </TextView>
+
+</LinearLayout>

@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlFilterExtContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="ru.kai.mcard.MFilterExtActivity"
+    style="?attr/mainBackground">
+
+    <android.support.design.widget.AppBarLayout
+        app:theme="?attr/toolBar"
+        android:id="@+id/mFilterExtAppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/mFilterExtToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:fitsSystemWindows="true"
+            app:title="@string/filter_ext_title">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/svFilterExt"
+        android:layout_below="@id/mFilterExtAppBarLayout"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/filds_margin"
+            android:layout_marginRight="@dimen/filds_margin"
+            android:weightSum="1"
+            android:id="@+id/llSVFilterExt">
+
+            <LinearLayout
+                style="?attr/styleEditsViewContainer"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/llFilterExtFilterName"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/filter_ext_filter_name"
+                    android:id="@+id/tvFilterName"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    style="@style/StyleEditsView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editFilterName"
+                    android:layout_weight="1"
+                    android:paddingLeft="8dp"
+                    android:hint="@string/filter_ext_hint_filter_name"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="?attr/styleEditsViewContainer"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/llFilterExtWithoutDate"
+                android:layout_marginTop="4dp">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkBoxWithoutDate"
+                    android:layout_marginLeft="6dp" />
+
+                <TextView
+                    style="@style/StyleEditsView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/filter_ext_caption_without_date"
+                    android:id="@+id/tvWithoutDate"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp" />
+
+                <EditText
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editInvisibleWithoutDate"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="?attr/styleEditsViewContainer"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/llFilterExtUseDate"
+                android:layout_marginTop="4dp">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkBoxUseDate"
+                    android:layout_marginLeft="6dp"
+                    android:onClick="chbChecked"/>
+
+                <TextView
+                    style="@style/StyleEditsView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tvFilterExtFirstDate"
+                    android:hint="@string/filter_ext_hint_first_date"
+                    android:gravity="center|center"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:onClick="setFirstDate"
+                    android:paddingRight="7dp"/>
+
+                <Button
+                    style="?attr/btnStyle"
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:text="X"
+                    android:id="@+id/btnFilterExtFirstDateDel"
+                    android:onClick="delFilterExtFirstDate"/>
+
+                <TextView
+                    style="@style/StyleEditsView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tvFilterExtLastDate"
+                    android:hint="@string/filter_ext_hint_last_date"
+                    android:gravity="center|center"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:onClick="setLastDate"
+                    android:paddingLeft="7dp"/>
+
+                <Button
+                    style="?attr/btnStyle"
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:text="X"
+                    android:id="@+id/btnFilterExtLastDateDel"
+                    android:onClick="delFilterExtLastDate"/>
+
+                <EditText
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="time"
+                    android:visibility="invisible"
+                    android:id="@+id/editInvisibleFilterExtDate" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                style="?attr/styleEditsViewContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rlFilterExtClinic"
+                android:layout_marginTop="4dp">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkBoxClinic"
+                    android:layout_marginLeft="6dp"
+                    android:layout_alignParentStart="false"
+                    android:layout_alignParentLeft="false"
+                    android:layout_centerVertical="true"
+                    android:onClick="chbChecked"/>
+
+                <AutoCompleteTextView
+                    style="@style/StyleEditsView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editFilterExtClinic"
+                    android:layout_alignParentTop="false"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentStart="false"
+                    android:layout_toLeftOf="@+id/butFilterExtOpenClinics"
+                    android:ems="10"
+                    android:hint="@string/visit_hint_clinik"
+                    android:inputType="textCapSentences"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext"
+                    android:completionThreshold="1"
+                    android:layout_toRightOf="@+id/checkBoxClinic" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=">"
+                    android:id="@+id/butFilterExtOpenClinics"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="false"
+                    android:layout_alignBottom="@+id/editFilterExtClinic"
+                    android:onClick="openDataForFilterExt"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="?attr/styleEditsViewContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rlFilterExtDoctor"
+                android:layout_marginTop="4dp">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkBoxDoctor"
+                    android:layout_marginLeft="6dp"
+                    android:layout_alignParentStart="false"
+                    android:layout_alignParentLeft="false"
+                    android:layout_centerVertical="true"
+                    android:onClick="chbChecked"/>
+
+                <AutoCompleteTextView
+                    style="@style/StyleEditsView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editFilterExtDoctor"
+                    android:layout_alignParentTop="false"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentStart="false"
+                    android:layout_toLeftOf="@+id/butFilterExtOpenDoctors"
+                    android:ems="10"
+                    android:hint="@string/visit_hint_doctor"
+                    android:inputType="textCapWords"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext"
+                    android:completionThreshold="1"
+                    android:layout_toRightOf="@+id/checkBoxDoctor" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=">"
+                    android:id="@+id/butFilterExtOpenDoctors"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="false"
+                    android:layout_alignBottom="@+id/editFilterExtDoctor"
+                    android:onClick="openDataForFilterExt"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="?attr/styleEditsViewContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/rlFilterExtSpecialization"
+                android:layout_marginTop="4dp">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkBoxSpecialization"
+                    android:layout_marginLeft="6dp"
+                    android:layout_alignParentStart="false"
+                    android:layout_alignParentLeft="false"
+                    android:layout_centerVertical="true"
+                    android:onClick="chbChecked"/>
+
+
+                <AutoCompleteTextView
+                    style="@style/StyleEditsView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editFilterExtSpecialization"
+                    android:layout_alignParentTop="false"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentStart="false"
+                    android:layout_toLeftOf="@+id/butFilterExtOpenSpecializations"
+                    android:ems="10"
+                    android:hint="@string/visit_hint_specialization"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:inputType="text"
+                    android:imeOptions="actionNext"
+                    android:completionThreshold="1"
+                    android:layout_toRightOf="@+id/checkBoxSpecialization"/>
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=">"
+                    android:id="@+id/butFilterExtOpenSpecializations"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="false"
+                    android:layout_alignBottom="@+id/editFilterExtSpecialization"
+                    android:onClick="openDataForFilterExt"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="?attr/styleEditsViewContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/rlFilterExtCure"
+                android:layout_marginTop="4dp">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkBoxCure"
+                    android:layout_marginLeft="6dp"
+                    android:layout_alignParentStart="false"
+                    android:layout_alignParentLeft="false"
+                    android:layout_centerVertical="true"
+                    android:onClick="chbChecked"/>
+
+                <AutoCompleteTextView
+                    style="@style/StyleEditsView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editFilterExtCure"
+                    android:layout_alignParentTop="false"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="false"
+                    android:layout_toLeftOf="@+id/butFilterExtOpenCures"
+                    android:ems="10"
+                    android:hint="@string/visits_cures_hint_cure"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:inputType="text"
+                    android:imeOptions="actionNext"
+                    android:completionThreshold="1"
+                    android:layout_toRightOf="@+id/checkBoxCure"/>
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=">"
+                    android:id="@+id/butFilterExtOpenCures"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="false"
+                    android:layout_alignBottom="@+id/editFilterExtCure"
+                    android:onClick="openDataForFilterExt"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="?attr/styleEditsViewContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/rlFilterExtAnalisisType"
+                android:layout_marginTop="4dp">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkBoxAnalisisType"
+                    android:layout_marginLeft="6dp"
+                    android:layout_alignParentStart="false"
+                    android:layout_alignParentLeft="false"
+                    android:layout_centerVertical="true"
+                    android:onClick="chbChecked"/>
+
+                <AutoCompleteTextView
+                    style="@style/StyleEditsView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editFilterExtAnalisisType"
+                    android:layout_alignParentTop="false"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="false"
+                    android:layout_toLeftOf="@+id/butFilterExtOpenAnalisisTypes"
+                    android:ems="10"
+                    android:hint="@string/filter_ext_hint_analisis_type"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:inputType="text"
+                    android:imeOptions="actionNext"
+                    android:completionThreshold="1"
+                    android:layout_toRightOf="@+id/checkBoxAnalisisType"/>
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=">"
+                    android:id="@+id/butFilterExtOpenAnalisisTypes"
+                    android:onClick="openDataForFilterExt"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+            <Button
+                style="?attr/btnStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/filds_margin"
+                android:text="@string/but_apply"
+                android:id="@+id/btnOpenSavedFiltersList"
+                android:onClick="btnFilterExtSave"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+

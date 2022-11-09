@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_mcard_main_list"
+    android:paddingBottom="@dimen/mcard_main_list_margin_2"
+    android:paddingLeft="@dimen/mcard_main_list_margin_2"
+    android:paddingRight="@dimen/mcard_main_list_margin_2"
+    android:paddingTop="@dimen/mcard_main_list_margin_2"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="ru.kai.mcard.MCardMainActivity"
+    style="?attr/mainBackground"
+    tools:showIn="@layout/mcard_main_app_bar">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:visibility="gone"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mMainMCardListRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:clipToPadding="false" />
+
+    <TextView
+        style="?attr/tvCaptions"
+        android:id="@+id/tvMainMCardListEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/filds_margin"
+        android:layout_marginRight="@dimen/filds_margin"
+        android:layout_marginTop="@dimen/filds_margin"
+        android:text="@string/no_vizits"
+        android:visibility="gone"
+        android:gravity="fill_horizontal" />
+
+    <TextView
+        style="?attr/tvCaptions"
+        android:id="@+id/tvMainMCardListFiltredEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/filds_margin"
+        android:layout_marginRight="@dimen/filds_margin"
+        android:layout_marginTop="@dimen/filds_margin"
+        android:text="@string/no_filtred_vizits"
+        android:visibility="gone"
+        android:gravity="fill_horizontal" />
+
+</RelativeLayout>

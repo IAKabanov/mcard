@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/general_img_choice"
+        android:icon="@drawable/ic_touch_app_vector"
+        android:title=""
+        app:showAsAction="always">
+    </item>
+    <item
+        android:id="@+id/general_img_OK"
+        android:icon="@drawable/ic_check_vector"
+        android:title=""
+        app:showAsAction="always">
+    </item>
+    <item
+        android:id="@+id/general_img_Close"
+        android:icon="@drawable/ic_close_vector"
+        android:title=""
+        app:showAsAction="always">
+    </item>
+
+</menu>

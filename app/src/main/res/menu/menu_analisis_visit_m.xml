@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/av_action_img_OK"
+        android:icon="@drawable/ic_check_vector"
+        android:title=""
+        app:showAsAction="always">
+    </item>
+    <item
+        android:id="@+id/av_action_img_Close"
+        android:icon="@drawable/ic_close_vector"
+        android:title=""
+        app:showAsAction="always">
+    </item>
+
+</menu>
+
+
+<!--xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MAnalisisVisitActivity"-->
+
+    <!--    <item
+            android:id="@+id/action_settings"
+            android:orderInCategory="100"
+            android:showAsAction="never"
+            android:title="@string/action_settings" /> -->
+

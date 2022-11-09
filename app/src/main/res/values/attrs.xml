@@ -1,0 +1,97 @@
+<resources>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+
+        <attr name="mainBackground" format="reference" />
+        <attr name="lvMainList" format="reference" />
+        <attr name="mainListItemBackground" format="reference" />
+        <attr name="tvTitle" format="reference" />
+        <attr name="tvMainTitle" format="reference" />
+        <attr name="tvVisitsTitle" format="reference" />
+        <attr name="tvParamsVisitsTitle" format="reference" />
+        <attr name="lvAll" format="reference" />
+        <attr name="tvListItem" format="reference" />
+        <attr name="tvCaptions" format="reference" />
+        <attr name="styleEditsView" format="reference" />
+        <attr name="styleEditsViewContainer" format="reference" />
+        <attr name="styleEditsViewWithoutContainer" format="reference" />
+        <attr name="btnStyle" format="reference" />
+        <attr name="btnImpelStyle" format="reference" />
+        <attr name="toggleButtonStyle" format="reference" />
+        <attr name="imgButtonStyle" format="reference" />
+        <attr name="visitsTabLayout" format="reference" />
+        <attr name="toolBar" format="reference" />
+        <attr name="scrollingAppBarLayout" format="color" />
+
+        <attr name="scrollingToolBarBackground" format="reference" />
+
+        <attr name="headerNavigationView" format="reference" />
+        <attr name="menuNavigationView" format="reference" />
+        <attr name="cvForMCardMainListVisitsItem" format="reference" />
+
+        <attr name="fabColor" format="color" />
+        <attr name="fabPressedColor" format="color" />
+
+        <attr name="accentColor" format="color" />
+
+        <attr name="editTextPlusStyle" format="reference" />
+        <attr name="floatingLabelStyle" format="reference" />
+        <!--<attr name="editTextBackground" format="reference" />-->
+    </declare-styleable>
+
+    <declare-styleable name="CardViews">
+        <attr name="llSimpleCardView" format="reference"/>
+        <attr name="tvSimpleCardView" format="reference"/>
+        <attr name="cvSimpleCardViewBackground" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="FloatingActionButton">
+        <attr name="fab_colorPressed" format="color"/>
+        <attr name="fab_colorDisabled" format="color"/>
+        <attr name="fab_colorNormal" format="color"/>
+        <attr name="fab_icon" format="reference"/>
+        <attr name="fab_size" format="enum">
+            <enum name="normal" value="0"/>
+            <enum name="mini" value="1"/>
+        </attr>
+        <attr name="fab_title" format="string"/>
+        <attr name="fab_stroke_visible" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="AddFloatingActionButton">
+        <attr name="fab_plusIconColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="FloatingActionsMenu">
+        <attr name="fab_addButtonColorPressed" format="color"/>
+        <attr name="fab_addButtonColorNormal" format="color"/>
+        <attr name="fab_addButtonSize" format="enum">
+            <enum name="normal" value="0"/>
+            <enum name="mini" value="1"/>
+        </attr>
+        <attr name="fab_addButtonPlusIconColor" format="color"/>
+        <attr name="fab_addButtonStrokeVisible" format="boolean"/>
+        <attr name="fab_labelStyle" format="reference"/>
+        <attr name="fab_labelsPosition" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+        <attr name="fab_expandDirection" format="enum">
+            <enum name="up" value="0"/>
+            <enum name="down" value="1"/>
+            <enum name="left" value="2"/>
+            <enum name="right" value="3"/>
+        </attr>
+    </declare-styleable>
+
+
+
+
+
+</resources>

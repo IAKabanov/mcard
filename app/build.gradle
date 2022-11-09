@@ -1,0 +1,134 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'android-apt' // для butterknife
+//apply plugin: 'com.android.library'
+//apply plugin: 'com.jakewharton.butterknife'
+//apply plugin: 'com.neenbedankt.android-apt' // for dagger 2  // apt is depricated, use annotationProcessor
+
+android {
+    compileSdkVersion 26 //23
+    //buildToolsVersion '28.0.3'
+
+    defaultConfig {
+        applicationId "ru.kai.mcard"
+        minSdkVersion 15
+        targetSdkVersion 26   //23
+        versionCode 108
+        versionName "2.4.29"
+        //vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+        testInstrumentationRunner "com.android.test.runner.AndroidJUnitRunner"
+
+
+
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            shrinkResources true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    // для обтекания текста
+    //implementation 'com.android.support:recyclerview-v7:23.1.1'
+    //implementation 'com.commit451:PhotoView:1.2.4'
+
+    // [START gms_compile]
+    // google analytics
+    // [END gms_compile]
+
+    //implementation 'com.github.deano2390:FlowTextView:2.0.4'
+    //implementation 'com.google.android.gms:play-services-appindexing:8.4.0'
+    //implementation 'com.github.ozodrukh:RippleDrawable:2.0.0' // для обтекания текста and RippleDrawable
+
+    //implementation 'com.android.support:support-vector-drawable:23.4.0'
+    //implementation 'com.android.support.constraint:constraint-layout:1.0.1'
+
+
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.android.support:support-v4:26.1.0'
+    implementation 'com.android.support:cardview-v7:26.1.0'
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+    implementation 'com.google.android.gms:play-services-analytics:9.2.0'
+    implementation 'com.android.support:support-v13:26.1.0'
+    implementation 'com.google.android.gms:play-services-appindexing:9.2.0'
+    implementation 'org.mockito:mockito-core:2.8.47'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.1'
+
+    // зависимость добавлена из-за ошибки: Unable to get provider com.google.firebase.provider.FirebaseInitProvider: java.lang.ClassNotFoundException: com.google.firebase.provider.FirebaseInitProvider
+    // также есть добавка в MCardApplication в виде процедуры attachBaseContext
+    implementation 'com.android.support:multidex:1.0.1'
+
+    // для butterknife
+    //implementation 'com.jakewharton:butterknife:8.8.1' // 8.4.0  // 8.6.0
+    //annotationProcessor 'com.jakewharton:butterknife:8.8.1' // 8.4.0  // 8.6.0
+    //apt 'com.jakewharton:butterknife-compiler:8.8.1' // 8.4.0  // 8.6.0
+
+    // for dagger 2
+    implementation 'com.google.dagger:dagger:2.10'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.10'
+    //apt 'com.google.dagger:dagger-compiler:2.10'
+
+    // for RX
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.0'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+
+    // for custom fonts:
+    implementation 'uk.co.chrisjenx:calligraphy:2.2.0'  //  https://github.com/chrisjenx/Calligraphy
+
+    // for ripple-effect for pre-lolipop version
+    implementation 'com.balysv:material-ripple:1.0.2'   // https://github.com/balysv/material-ripple
+
+    // tests
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    testImplementation 'junit:junit:4.12'
+//    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+//    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    androidTestImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support:support-annotations:23.4.0'
+    androidTestImplementation 'com.android.support.test:runner:0.5'
+    androidTestImplementation 'com.android.support.test:rules:0.5'
+
+    // LeakCanary
+    //debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+    testImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+
+    // AutoValue for RevealAnimationSetting
+    api                 "com.google.auto.value:auto-value-annotations:1.6"
+    annotationProcessor "com.google.auto.value:auto-value:1.6"
+    annotationProcessor 'com.ryanharter.auto.value:auto-value-parcel:0.2.6'
+
+    // https://github.com/amitshekhariitbhu/Android-Debug-Database
+    // Android Debug Database; just start the application, you will see in the logcat an entry like follows D/DebugDB: Open http://XXX.XXX.X.XXX:8080 in your browser
+    // You can also always get the debug address url from your code by calling the method DebugDB.getAddressLog();
+    // Your Android phone and laptop should be connected to the same Network (Wifi or LAN).
+    // If you are using it over usb, run adb forward tcp:8080 tcp:8080
+    //debugImplementation 'com.amitshekhar.android:debug-db:1.0.4'
+
+
+    // Gradle dependency on Stetho (debug with Google Chrome development tools)
+    // http://facebook.github.io/stetho/#download
+    // http://developer.alexanderklimov.ru/android/debug/stetho.php
+    implementation 'com.facebook.stetho:stetho:1.5.0'
+
+
+}
+
+apply plugin: 'com.google.gms.google-services'
+
+// google analytics

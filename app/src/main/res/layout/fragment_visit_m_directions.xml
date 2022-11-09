@@ -1,0 +1,125 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MVisitDirectionsFragment">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/visitsFragmentDirectionsListCoordinatorLayout"
+        android:clickable="true"
+        android:fitsSystemWindows="false">
+
+        <android.support.design.widget.AppBarLayout
+            app:theme="?attr/visitsTabLayout"
+            android:id="@+id/visitsFragmentDirectionsListAppBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/visitsFragmentDirectionsCollapsingToolBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                app:contentScrim="?attr/colorPrimary"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="?attr/lvMainList"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:id="@+id/visitsFragmentDirectionsDivider"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/visits_fragment_directions_list"
+                        android:layout_margin="@dimen/explanations_text_margin"
+                        android:textSize="@dimen/explanations_text_size"/>
+
+                    <TextView
+                        style="?attr/lvMainList"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:id="@+id/visitsFragmentDirectionsDivider2"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/visits_fragment_directions_list_help"
+                        android:text="@string/visits_fragment_directions_list_help"
+                        android:layout_margin="@dimen/explanations_text_margin"
+                        android:textSize="@dimen/explanations_text_size"
+                        android:clickable="true" />
+
+                </LinearLayout>
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/visitsFragmentDirectionsListNestedScrollView"
+            android:clickable="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <android.support.v7.widget.RecyclerView
+
+                android:id="@+id/rvVisitsFragmentDirections"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:clipToPadding="false"/>
+
+        </android.support.v4.widget.NestedScrollView>
+
+        <ru.kai.mcard.FloatingActionsMenu
+            android:id="@+id/famAddVisitsDirections"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_addButtonColorNormal="@color/fam_red"
+            fab:fab_addButtonColorPressed="@color/color_fam"
+            fab:fab_addButtonPlusIconColor="@color/fam_plus"
+            fab:fab_labelStyle="@style/menu_labels_style"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="bottom|right"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true">
+
+            <ru.kai.mcard.FloatingActionButton
+                android:id="@+id/fabAddVisitsDirectionsAnalisisType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/fam_red"
+                fab:fab_colorPressed="@color/color_fam"
+                fab:fab_icon="@mipmap/img_flask"
+                app:fab_title="@string/visits_fragment_directions_list_fab_add_directions_an_type"/>
+
+            <ru.kai.mcard.FloatingActionButton
+                android:id="@+id/fabAddVisitsDirectionsDoctorSpesialisation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/fam_red"
+                fab:fab_colorPressed="@color/color_fam"
+                fab:fab_icon="@mipmap/img_doctor"
+                app:fab_title="@string/visits_fragment_directions_list_fab_add_directions_doctors_specialisation"/>
+
+        </ru.kai.mcard.FloatingActionsMenu>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</FrameLayout>

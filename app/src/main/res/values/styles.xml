@@ -1,0 +1,763 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryGreen</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkGreen</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!--for Shared element transition-->
+        <item name="android:windowContentTransitions">true</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+    <style name="AppTheme.ProgressBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <style name="TabLayoutStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.NoActionBar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    //**********************************************************
+    <style name="FullscreenTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    //**********************************************************
+    <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
+
+    </style>
+
+    //**********************************************************
+    <style name="StandartTheme" parent="AppTheme.NoActionBar">
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+
+    </style>
+
+    //**********************************************************
+
+    <style name="TitleTextView" parent="@android:style/Widget.TextView">
+        <item name="android:shadowColor">@color/color_standart_green_title</item>
+        <item name="android:shadowRadius">2</item>
+        <item name="android:shadowDx">1.5</item>
+        <item name="android:shadowDy">1.5</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/color_standart_green_title</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">normal</item>
+        <!--<item name="android:typeface">serif</item>-->
+        <item name="fontPath">fonts/Roboto-Black.ttf</item>
+<!--        <item name="android:typeface">serif</item>  roboto noto -->
+    </style>
+
+    <style name="TitleMainTextView" parent="TitleTextView">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TitleVisitsTextView" parent="TitleTextView">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="TitleParamsTextView" parent="TitleTextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+    </style>
+
+    <style name="allListView">
+        <item name="android:background">@drawable/standart_green_lists_background</item>
+        <item name="android:layoutAnimation">@anim/layout_bottom_to_top_slide</item>
+        <item name="android:dividerHeight">0sp</item>
+    </style>
+
+    <style name="ListTextView" parent="@android:style/Widget.TextView">
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowRadius">0.1</item>
+        <item name="android:shadowDx">0.1</item>
+        <item name="android:shadowDy">0.1</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/color_standart_green_title</item>
+        <item name="android:paddingTop">4sp</item>
+        <item name="android:paddingBottom">3sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@drawable/standart_green_list_item_background</item>
+    </style>
+
+    <style name="CaptionsTextView" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/color_standart_green_title</item>
+        <item name="android:textStyle">bold</item>
+<!--        <item name="android:typeface">serif</item>-->
+    </style>
+
+    <style name="StyleEditsView">
+        <item name="android:textSize">16sp</item>
+       <!-- <item name="android:background">@drawable/standart_green_filds_background</item>-->
+    </style>
+
+
+
+    <style name="TextAppearance.FontPath" parent="android:TextAppearance">
+        <!-- Custom Attr-->
+        <!-- <item name="fontPath">fonts/RobotoCondensed-Regular.ttf</item> -->
+
+        <item name="fontPath">fonts/RobotoCondensed-BoldItalic.ttf</item>
+    </style>
+
+    <!--<style name="newEditTextPlusBaseStyle" parent="android:Widget.EditText">-->
+    <style name="newEditTextPlusBaseStyle" parent="Widget.AppCompat.EditText">
+    <!--<style name="newEditTextPlusBaseStyle">-->
+        <!--<item name="android:background">?attr/editTextBackground</item>               editTextBackground     -->
+        <!--<item name="android:background">@drawable/edittext_selector</item>-->
+        <!--<item name="android:background">@drawable/edittext</item>-->
+        <!--<item name="android:colorBackground">@color/color_standart_green_main_list_top</item>-->
+        <!--<item name="android:background">@color/color_standart_green_main_list_top</item>-->
+
+        <!--<item name="fontPath">fonts/Roboto-MediumItalic.ttf</item>-->
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+        <!--<item name="android:textAppearance">@style/TextAppearance.FontPath</item>-->
+
+        <item name="android:textSize">@dimen/edit_text_plus_label_text_size_16sp</item>
+        <item name="android:singleLine">true</item>
+
+        <!--<item name="android:shadowColor">#000000</item>-->
+        <!--<item name="android:shadowRadius">0.1</item>-->
+        <!--<item name="android:shadowDx">0.1</item>-->
+        <!--<item name="android:shadowDy">0.1</item>-->
+
+    </style>
+
+    <!--<style name="FloatingLabel" parent="TextAppearance.AppCompat">-->
+    <style name="FloatingLabelBaseStyle" parent="ThemeOverlay.AppCompat.Light">
+        <!-- Hint color and label color in FALSE state -->
+        <!--<item name="android:textColorHint">@color/color_standart_green_shadow</item>-->
+        <item name="android:textSize">12sp</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <!--<item name="colorAccent">@color/black_overlay</item>-->
+        <item name="colorControlNormal">@color/white</item>
+        <!--<item name="colorControlActivated">@cocolor_standard_green_accentcent</item>-->
+    </style>
+
+    //**********************************************************
+    // cardview
+    <style name="SimpleCardView" parent="CardView">
+        <item name="cardCornerRadius">2dp</item>
+        <item name="cardElevation">3dp</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="contentPaddingBottom">8dp</item>
+        <item name="contentPaddingTop">8dp</item>
+        <item name="contentPaddingLeft">20dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="cardBackgroundColor">?attr/cvSimpleCardViewBackground</item>
+    </style>
+
+    <style name="SimpleCardViewLL">
+        <item name="android:background">@drawable/standart_green_list_item_background</item>
+    </style>
+    <style name="SimpleCardViewText" parent="@android:style/Widget.TextView">
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+        <item name="android:textSize">@dimen/edit_text_for_list_text_size_17sp</item>
+    </style>
+    //**********************************************************
+    // кнопки
+
+    <style name="ButtonStyle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/color_standart_green_title</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowRadius">0.1</item>
+        <item name="android:shadowDx">0.3</item>
+        <item name="android:shadowDy">0.3</item>
+        <item name="android:background">@drawable/standart_green_button_background</item>
+    </style>
+
+    <style name="ButtonSmallStyle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowRadius">0.1</item>
+        <item name="android:shadowDx">0.3</item>
+        <item name="android:shadowDy">0.3</item>
+    </style>
+
+
+    //*******************************************************************
+    // стили для тем
+    //*******************************************************************
+    // standart_green
+    <style name="StandartTheme.Green">
+        <item name="android:statusBarColor">@color/colorPrimaryDarkGreen</item>
+    </style>
+
+    <style name="standart_green_mainBackground" parent="StandartTheme.Green">
+        <item name="android:background">@color/color_standart_green_main_background</item>
+    </style>
+    <style name="standart_green_MainListItemBackground" parent="ListTextView">
+        <item name="android:background">@drawable/standart_green_main_list_item_background</item>
+    </style>
+    <style name="standart_green_lvMainList" parent="standart_green_allListView">
+        <item name="android:background">@color/color_standart_green_main_background</item>
+        <item name="android:divider">@color/color_standart_green_main_background</item>
+    </style>
+    <style name="standart_green_TitleTextView" parent="TitleTextView">
+        <item name="android:shadowColor">@color/color_standart_green_title</item>
+        <item name="android:textColor">@color/color_standart_green_title</item>
+    </style>
+    <style name="standart_green_TitleMainTextView" parent="TitleMainTextView"></style>
+
+    <style name="standart_green_TitleVisitsTextView" parent="TitleVisitsTextView"></style>
+    <style name="standart_green_TitleParamsTextView" parent="TitleParamsTextView"></style>
+    <style name="standart_green_allListView" parent="allListView"></style>
+    <style name="standart_green_ListTextView" parent="ListTextView"></style>
+    <style name="standart_green_CaptionsTextView" parent="CaptionsTextView">
+        <item name="android:background">@color/color_standart_green_main_background</item>
+        <item name="android:textColor">@color/color_standart_green_caption_text</item>
+    </style>
+    <style name="standart_green_StyleEditsView" parent="StyleEditsView">
+        <item name="android:textColor">@color/color_standart_green_caption_text</item>
+        <item name="android:textColorHint">@color/color_standart_green_caption_text</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="standart_green_StyleEditsViewContainer">
+        <item name="android:background">@drawable/standart_green_filds_background</item>
+        <item name="android:textColor">@color/color_standart_green_caption_text</item>
+        <item name="android:textColorHint">@color/color_standart_green_caption_text</item>
+    </style>
+    <style name="standart_green_StyleEditsViewWithoutContainer" parent="StyleEditsView">
+        <item name="android:background">@drawable/standart_green_filds_background</item>
+    </style>
+    <style name="standart_green_ButtonStyle" parent="ButtonStyle">
+        <item name="android:textColor">@color/color_standart_green_btn_text</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:background">@drawable/standart_green_button_background</item>
+    </style>
+    <style name="standart_green_ButtonImpelStyle" parent="ButtonStyle">
+        <item name="android:textColor">@color/color_standart_green_btn_impel_font</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:background">@drawable/standart_green_button_impel_background</item>
+    </style>
+    <style name="standart_green_ToggleButtonStyle">
+        <item name="android:textColor">@color/color_standart_green_title</item>
+    </style>
+    <style name="standart_green_ImageButtonStyle">
+        <item name="android:background">@color/color_standart_green_main_background</item>
+    </style>
+    <style name="standart_green_ScrollingToolBarBackground" parent="AppTheme.NoActionBar">
+        <item name="android:background">@color/color_standart_green_title</item>
+    </style>
+    <style name="standart_green_TabLayoutStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:background">@color/color_standart_green_tablayout_background</item>
+    </style>
+    <style name="standart_green_ToolBarStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:background">@color/color_standart_green_toolbar_background</item>
+    </style>
+    <style name="standart_green_ScrollingAppBarLayoutStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:background">@color/color_standart_green_toolbar_background</item>
+    </style>
+    <style name="standart_green_headerNavigationViewStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:background">@drawable/standart_green_side_nav_bar</item>
+    </style>
+    <style name="standart_green_menuNavigationViewStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:background">@color/color_standart_green_menu_navigation_view</item>
+    </style>
+    <style name="standart_green_cvForMCardMainListVisitsItemStyle" parent="ListTextView">
+        <item name="android:textColor">@color/color_standart_green_title</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:background">@drawable/standart_green_cv_mcard_main_list_visits_item_background</item>
+    </style>
+
+    <style name="standart_green_simpleCardViewText" parent="SimpleCardViewText"></style>
+
+
+
+
+    <style name="standard_green_EditTextPlusStyle" parent="@style/newEditTextPlusBaseStyle">
+        <!--<item name="android:background">@drawable/standart_green_filds_background</item>-->
+        <!--<item name="android:colorBackground">@color/color_standart_green_main_list_top</item>-->
+        <item name="android:colorBackground">@color/color_standard_green_main_list_top</item>
+
+<!--
+        <item name="colorControlNormal">@color/color_standart_green_main_list_top</item>
+        <item name="colorControlActivated">@android:color/holo_purple</item>
+-->
+
+        <item name="android:textColor">@color/color_standart_green_title</item>
+
+    </style>
+
+    <style name="standard_green_FloatingLabelStyle" parent="FloatingLabelBaseStyle">
+        <!-- Hint color and label color in FALSE state -->
+        <!--<item name="android:textColorHint">@color/color_standart_green_shadow</item>-->
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/black_overlay</item>
+        <!--<item name="colorControlNormal">@color/white</item>-->
+        <item name="colorControlActivated">@color/color_standard_green_accent</item>
+        <item name="android:colorBackground">@color/color_standard_green_main_list_top</item>
+    </style>
+
+    //*******************************************************************
+    //standart_lemon
+    <style name="StandartTheme.Lemon">
+        <item name="android:statusBarColor">@color/colorPrimaryDarkLemon</item>
+    </style>
+
+    <style name="standart_lemon_mainBackground" parent="StandartTheme.Lemon">
+        <item name="android:background">@color/color_standart_lemon_main_background</item>
+    </style>
+
+    <style name="standart_lemon_lvMainList" parent="new_year_allListView">
+        <item name="android:background">@color/color_standart_lemon_main_background</item>
+        <item name="android:divider">@color/color_standart_lemon_main_background</item>
+    </style>
+    <style name="standart_lemon_MainListItemBackground" parent="ListTextView">
+        <item name="android:shadowColor">@color/color_standart_lemon_title</item>
+        <item name="android:textColor">@color/color_standart_lemon_shadow</item>
+        <item name="android:background">@drawable/standart_lemon_main_list_item_background</item>
+    </style>
+    <style name="standart_lemon_TitleTextView" parent="TitleTextView">
+        <item name="android:shadowColor">@color/color_standart_lemon_title</item>
+        <item name="android:textColor">@color/color_standart_lemon_shadow</item>
+    </style>
+    <style name="standart_lemon_TitleMainTextView" parent="TitleMainTextView">
+        <item name="android:shadowColor">@color/color_standart_lemon_title</item>
+        <item name="android:textColor">@color/color_standart_lemon_shadow</item>
+    </style>
+    <style name="standart_lemon_TitleVisitsTextView" parent="TitleVisitsTextView">
+        <item name="android:shadowColor">@color/color_standart_lemon_title</item>
+        <item name="android:textColor">@color/color_standart_lemon_shadow</item>
+    </style>
+    <style name="standart_lemon_TitleParamsTextView" parent="TitleParamsTextView">
+        <item name="android:shadowColor">@color/color_standart_lemon_title</item>
+        <item name="android:textColor">@color/color_standart_lemon_shadow</item>
+    </style>
+    <style name="standart_lemon_allListView" parent="allListView">
+        <item name="android:background">@drawable/standart_lemon_lists_background</item>
+    </style>
+    <style name="standart_lemon_ListItemTextView" parent="ListTextView">
+        <item name="android:shadowColor">@color/color_standart_lemon_title</item>
+        <item name="android:textColor">@color/color_standart_lemon_shadow</item>
+        <item name="android:background">@drawable/standart_lemon_list_item_background</item>
+    </style>
+    <style name="standart_lemon_CaptionsTextView" parent="CaptionsTextView">
+        <item name="android:background">@color/color_standart_lemon_main_background</item>
+        <item name="android:textColor">@color/color_standart_lemon_caption_text</item>
+    </style>
+    <style name="standart_lemon_StyleEditsView" parent="StyleEditsView">
+        <item name="android:textColor">@color/color_standart_lemon_caption_text</item>
+        <item name="android:textColorHint">@color/color_standart_lemon_caption_text</item>
+    </style>
+    <style name="standart_lemon_StyleEditsViewContainer">
+        <item name="android:background">@drawable/standart_lemon_filds_background</item>
+    </style>
+    <style name="standart_lemon_StyleEditsViewWithoutContainer" parent="StyleEditsView">
+        <item name="android:background">@drawable/standart_lemon_filds_background</item>
+    </style>
+    <style name="standart_lemon_ButtonStyle" parent="ButtonStyle">
+        <item name="android:textColor">@color/color_standart_lemon_btn_text</item>
+        <item name="android:shadowColor">@color/color_standart_lemon_shadow</item>
+        <item name="android:background">@drawable/standart_lemon_button_background</item>
+    </style>
+    <style name="standart_lemon_ButtonImpelStyle" parent="ButtonStyle">
+        <item name="android:textColor">@color/color_standart_lemon_btn_impel_font</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:background">@drawable/standart_lemon_button_impel_background</item>
+    </style>
+    <style name="standart_lemon_ToggleButtonStyle">
+        <item name="android:textColor">@color/color_standart_lemon_shadow</item>
+    </style>
+    <style name="standart_lemon_ImageButtonStyle">
+        <item name="android:background">@color/color_standart_lemon_main_background</item>
+    </style>
+
+    <style name="standart_lemon_TabLayoutStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:background">@color/color_standart_lemon_tablayout_background</item>
+    </style>
+    <style name="standart_lemon_ToolBarStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:background">@color/color_standart_lemon_toolbar_background</item>
+    </style>
+    <style name="standart_lemon_ScrollingAppBarLayoutStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:background">@color/color_standart_lemon_toolbar_background</item>
+    </style>
+    <style name="standart_lemon_headerNavigationViewStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:background">@drawable/standart_lemon_side_nav_bar</item>
+    </style>
+    <style name="standart_lemon_menuNavigationViewStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:background">@color/color_standart_lemon_menu_navigation_view</item>
+    </style>
+    <style name="standart_lemon_cvForMCardMainListVisitsItemStyle" parent="ListTextView">
+        <item name="android:textColor">@color/color_standart_lemon_title</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:background">@drawable/standart_lemon_cv_mcard_main_list_visits_item_background</item>
+    </style>
+
+    <style name="standart_lemon_simpleCardViewText" parent="SimpleCardViewText">
+        <item name="android:textColor">@color/color_standart_lemon_title</item>
+    </style>
+
+    <style name="standard_lemon_EditTextPlusStyle" parent="@style/newEditTextPlusBaseStyle">
+        <!--<item name="android:background">@drawable/standart_green_filds_background</item>-->
+        <!--<item name="android:colorBackground">@color/color_standart_green_main_list_top</item>-->
+
+        <item name="colorControlNormal">@color/color_standard_lemon_main_list_top</item>
+        <item name="colorControlActivated">@android:color/holo_purple</item>
+        <item name="android:textColor">@color/color_standart_lemon_title</item>
+
+    </style>
+    <style name="standard_lemon_FloatingLabelStyle" parent="FloatingLabelBaseStyle">
+        <!-- Hint color and label color in FALSE state -->
+        <!--<item name="android:textColorHint">@color/color_standart_green_shadow</item>-->
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/black_overlay</item>
+        <item name="colorControlNormal">@color/color_standart_lemon_title</item>
+        <item name="colorControlActivated">@color/color_standard_lemon_accent</item>
+    </style>
+
+    //*******************************************************************
+    //standart_pink
+    <style name="StandartTheme.Pink">
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPink</item>
+    </style>
+
+    <style name="standart_pink_mainBackground" parent="StandartTheme.Pink">
+        <item name="android:background">@color/color_standart_pink_main_background</item>
+    </style>
+
+    <style name="standart_pink_lvMainList" parent="new_year_allListView">
+        <item name="android:background">@color/color_standart_pink_main_background</item>
+        <item name="android:divider">@color/color_standart_pink_main_background</item>
+    </style>
+    <style name="standart_pink_MainListItemBackground" parent="ListTextView">
+        <item name="android:shadowColor">@color/color_standart_pink_title</item>
+        <item name="android:textColor">@color/color_standart_pink_shadow</item>
+        <item name="android:background">@drawable/standart_pink_main_list_item_background</item>
+    </style>
+    <style name="standart_pink_TitleTextView" parent="TitleTextView">
+        <item name="android:shadowColor">@color/color_standart_pink_title</item>
+        <item name="android:textColor">@color/color_standart_pink_shadow</item>
+    </style>
+    <style name="standart_pink_TitleMainTextView" parent="TitleMainTextView">
+        <item name="android:shadowColor">@color/color_standart_pink_title</item>
+        <item name="android:textColor">@color/color_standart_pink_shadow</item>
+    </style>
+    <style name="standart_pink_TitleVisitsTextView" parent="TitleVisitsTextView">
+        <item name="android:shadowColor">@color/color_standart_pink_title</item>
+        <item name="android:textColor">@color/color_standart_pink_shadow</item>
+    </style>
+    <style name="standart_pink_TitleParamsTextView" parent="TitleParamsTextView">
+        <item name="android:shadowColor">@color/color_standart_pink_title</item>
+        <item name="android:textColor">@color/color_standart_pink_shadow</item>
+    </style>
+    <style name="standart_pink_allListView" parent="allListView">
+        <item name="android:background">@drawable/standart_pink_lists_background</item>
+    </style>
+    <style name="standart_pink_ListItemTextView" parent="ListTextView">
+        <item name="android:shadowColor">@color/color_standart_pink_title</item>
+        <item name="android:textColor">@color/color_standart_pink_shadow</item>
+        <item name="android:background">@drawable/standart_pink_list_item_background</item>
+    </style>
+    <style name="standart_pink_CaptionsTextView" parent="CaptionsTextView">
+        <item name="android:background">@color/color_standart_pink_main_background</item>
+        <item name="android:textColor">@color/color_standart_pink_caption_text</item>
+    </style>
+    <style name="standart_pink_StyleEditsView" parent="StyleEditsView">
+        <item name="android:textColor">@color/color_standart_pink_caption_text</item>
+        <item name="android:textColorHint">@color/color_standart_pink_caption_text</item>
+    </style>
+    <style name="standart_pink_StyleEditsViewContainer">
+        <item name="android:background">@drawable/standart_pink_filds_background</item>
+    </style>
+    <style name="standart_pink_StyleEditsViewWithoutContainer" parent="StyleEditsView">
+        <item name="android:background">@drawable/standart_pink_filds_background</item>
+    </style>
+    <style name="standart_pink_ButtonStyle" parent="ButtonStyle">
+        <item name="android:textColor">@color/color_standart_pink_shadow</item>
+        <item name="android:shadowColor">@color/color_standart_pink_shadow</item>
+        <item name="android:background">@drawable/standart_pink_button_background</item>
+    </style>
+    <style name="standart_pink_ButtonImpelStyle" parent="ButtonStyle">
+        <item name="android:textColor">@color/color_standart_pink_btn_impel_font</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:background">@drawable/standart_pink_button_impel_background</item>
+    </style>
+    <style name="standart_pink_ToggleButtonStyle">
+        <item name="android:textColor">@color/color_standart_pink_shadow</item>
+    </style>
+    <style name="standart_pink_ImageButtonStyle">
+        <item name="android:background">@color/color_standart_pink_main_background</item>
+    </style>
+
+    <style name="standart_pink_TabLayoutStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:background">@color/color_standart_pink_tablayout_background</item>
+    </style>
+    <style name="standart_pink_ToolBarStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:background">@color/color_standart_pink_toolbar_background</item>
+    </style>
+    <style name="standart_pink_ScrollingAppBarLayoutStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:background">@color/color_standart_pink_toolbar_background</item>
+    </style>
+    <style name="standart_pink_headerNavigationViewStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:background">@drawable/standart_pink_side_nav_bar</item>
+    </style>
+    <style name="standart_pink_menuNavigationViewStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:background">@color/color_standart_pink_menu_navigation_view</item>
+    </style>
+    <style name="standart_pink_cvForMCardMainListVisitsItemStyle" parent="ListTextView">
+        <item name="android:textColor">@color/color_standart_pink_title</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:background">@drawable/standart_pink_cv_mcard_main_list_visits_item_background</item>
+    </style>
+
+    <style name="standart_pink_simpleCardViewText" parent="SimpleCardViewText">
+        <item name="android:textColor">@color/color_standart_pink_title</item>
+    </style>
+
+    <style name="standard_pink_EditTextPlusStyle" parent="@style/newEditTextPlusBaseStyle">
+        <!--<item name="android:background">@drawable/standart_green_filds_background</item>-->
+        <!--<item name="android:colorBackground">@color/color_standart_green_main_list_top</item>-->
+
+        <item name="colorControlNormal">@color/color_standard_pink_main_list_top</item>
+        <item name="colorControlActivated">@android:color/holo_purple</item>
+        <item name="android:textColor">@color/color_standart_pink_title</item>
+
+    </style>
+    <style name="standard_pink_FloatingLabelStyle" parent="FloatingLabelBaseStyle">
+        <!-- Hint color and label color in FALSE state -->
+        <!--<item name="android:textColorHint">@color/color_standart_green_shadow</item>-->
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/black_overlay</item>
+        <!--<item name="colorControlNormal">@color/color_main_list_filter</item>-->
+        <item name="colorControlActivated">@color/color_standard_pink_accent</item>
+    </style>
+
+    //*******************************************************************
+    //standart_cornflower
+    <style name="StandartTheme.Cornflower">
+        <item name="android:statusBarColor">@color/colorPrimaryDarkCornflower</item>
+    </style>
+
+    <style name="standart_cornflower_mainBackground" parent="StandartTheme.Cornflower">
+        <item name="android:background">@color/color_standart_cornflower_main_background</item>
+    </style>
+
+    <style name="standart_cornflower_lvMainList" parent="new_year_allListView">
+        <item name="android:background">@color/color_standart_cornflower_main_background</item>
+        <item name="android:divider">@color/color_standart_cornflower_main_background</item>
+    </style>
+    <style name="standart_cornflower_MainListItemBackground" parent="ListTextView">
+        <item name="android:shadowColor">@color/color_standart_cornflower_title</item>
+        <item name="android:textColor">@color/color_standart_cornflower_shadow</item>
+        <item name="android:background">@drawable/standart_cornflower_main_list_item_background</item>
+    </style>
+    <style name="standart_cornflower_TitleTextView" parent="TitleTextView">
+        <item name="android:shadowColor">@color/color_standart_cornflower_title</item>
+        <item name="android:textColor">@color/color_standart_cornflower_shadow</item>
+    </style>
+    <style name="standart_cornflower_TitleMainTextView" parent="TitleMainTextView">
+        <item name="android:shadowColor">@color/color_standart_cornflower_title</item>
+        <item name="android:textColor">@color/color_standart_cornflower_shadow</item>
+    </style>
+    <style name="standart_cornflower_TitleVisitsTextView" parent="TitleVisitsTextView">
+        <item name="android:shadowColor">@color/color_standart_cornflower_title</item>
+        <item name="android:textColor">@color/color_standart_cornflower_shadow</item>
+    </style>
+    <style name="standart_cornflower_TitleParamsTextView" parent="TitleParamsTextView">
+        <item name="android:shadowColor">@color/color_standart_cornflower_title</item>
+        <item name="android:textColor">@color/color_standart_cornflower_shadow</item>
+    </style>
+    <style name="standart_cornflower_allListView" parent="allListView">
+        <item name="android:background">@drawable/standart_cornflower_lists_background</item>
+    </style>
+    <style name="standart_cornflower_ListItemTextView" parent="ListTextView">
+        <item name="android:shadowColor">@color/color_standart_cornflower_title</item>
+        <item name="android:textColor">@color/color_standart_cornflower_shadow</item>
+        <item name="android:background">@drawable/standart_cornflower_list_item_background</item>
+    </style>
+    <style name="standart_cornflower_CaptionsTextView" parent="CaptionsTextView">
+        <item name="android:background">@color/color_standart_cornflower_main_background</item>
+        <item name="android:textColor">@color/color_standart_cornflower_caption_text</item>
+    </style>
+    <style name="standart_cornflower_StyleEditsView" parent="StyleEditsView">
+        <item name="android:textColor">@color/color_standart_cornflower_caption_text</item>
+        <item name="android:textColorHint">@color/color_standart_cornflower_caption_text</item>
+    </style>
+    <style name="standart_cornflower_StyleEditsViewContainer">
+        <item name="android:background">@drawable/standart_cornflower_filds_background</item>
+    </style>
+    <style name="standart_cornflower_StyleEditsViewWithoutContainer" parent="StyleEditsView">
+        <item name="android:background">@drawable/standart_cornflower_filds_background</item>
+    </style>
+    <style name="standart_cornflower_ButtonStyle" parent="ButtonStyle">
+        <item name="android:textColor">@color/color_standart_cornflower_shadow</item>
+        <item name="android:shadowColor">@color/color_standart_cornflower_shadow</item>
+        <item name="android:background">@drawable/standart_cornflower_button_background</item>
+    </style>
+    <style name="standart_cornflower_ButtonImpelStyle" parent="ButtonStyle">
+        <item name="android:textColor">@color/color_standart_cornflower_btn_impel_font</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:background">@drawable/standart_cornflower_button_impel_background</item>
+    </style>
+    <style name="standart_cornflower_ToggleButtonStyle">
+        <item name="android:textColor">@color/color_standart_cornflower_shadow</item>
+    </style>
+    <style name="standart_cornflower_ImageButtonStyle">
+        <item name="android:background">@color/color_standart_cornflower_main_background</item>
+    </style>
+
+    <style name="standart_cornflower_TabLayoutStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:background">@color/color_standart_cornflower_tablayout_background</item>
+    </style>
+    <style name="standart_cornflower_ToolBarStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:background">@color/color_standart_cornflower_toolbar_background</item>
+    </style>
+    <style name="standart_cornflower_ScrollingAppBarLayoutStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:background">@color/color_standart_cornflower_toolbar_background</item>
+    </style>
+    <style name="standart_cornflower_headerNavigationViewStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:background">@drawable/standart_cornflower_side_nav_bar</item>
+    </style>
+    <style name="standart_cornflower_menuNavigationViewStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:background">@color/color_standart_cornflower_menu_navigation_view</item>
+    </style>
+    <style name="standart_cornflower_cvForMCardMainListVisitsItemStyle" parent="ListTextView">
+        <item name="android:textColor">@color/color_standart_cornflower_title</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:background">@drawable/standart_cornflower_cv_mcard_main_list_visits_item_background</item>
+    </style>
+
+    <style name="standart_cornflower_simpleCardViewText" parent="SimpleCardViewText">
+        <item name="android:textColor">@color/color_standart_cornflower_title</item>
+    </style>
+
+    <style name="standard_cornflower_EditTextPlusStyle" parent="@style/newEditTextPlusBaseStyle">
+        <!--<item name="android:background">@drawable/standart_green_filds_background</item>-->
+        <!--<item name="android:colorBackground">@color/color_standart_green_main_list_top</item>-->
+
+        <item name="colorControlNormal">@color/color_standard_cornflower_main_list_top</item>
+        <item name="colorControlActivated">@android:color/holo_purple</item>
+        <item name="android:textColor">@color/color_standart_cornflower_title</item>
+
+    </style>
+    <style name="standard_cornflower_FloatingLabelStyle" parent="FloatingLabelBaseStyle">
+        <!-- Hint color and label color in FALSE state -->
+        <!--<item name="android:textColorHint">@color/color_standart_green_shadow</item>-->
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/black_overlay</item>
+        <!--<item name="colorControlNormal">@color/color_main_list_filter</item>-->
+        <item name="colorControlActivated">@color/color_standard_cornflower_accent</item>
+    </style>
+
+    //*******************************************************************
+    //new_year
+    <style name="new_year_mainBackground" parent="AppTheme.NoActionBar">
+        <item name="android:background">@color/color_new_year_main_background</item>
+    </style>
+
+    <style name="new_year_lvMainList" parent="new_year_allListView">
+        <item name="android:background">@color/color_new_year_main_background</item>
+        <item name="android:divider">@color/color_new_year_main_background</item>
+    </style>
+    <style name="new_year_MainListItemBackground" parent="ListTextView">
+        <item name="android:shadowColor">@color/color_new_year_title</item>
+        <item name="android:textColor">@color/color_new_year_shadow</item>
+        <item name="android:background">@drawable/new_year_main_list_item_background</item>
+    </style>
+    <style name="new_year_TitleTextView" parent="TitleTextView">
+        <item name="android:shadowColor">@color/color_new_year_title</item>
+        <item name="android:textColor">@color/color_new_year_shadow</item>
+    </style>
+    <style name="new_year_TitleMainTextView" parent="TitleMainTextView">
+        <item name="android:shadowColor">@color/color_new_year_title</item>
+        <item name="android:textColor">@color/color_new_year_shadow</item>
+    </style>
+    <style name="new_year_TitleVisitsTextView" parent="TitleVisitsTextView">
+        <item name="android:shadowColor">@color/color_new_year_title</item>
+        <item name="android:textColor">@color/color_new_year_shadow</item>
+    </style>
+    <style name="new_year_TitleParamsTextView" parent="TitleParamsTextView">
+        <item name="android:shadowColor">@color/color_new_year_title</item>
+        <item name="android:textColor">@color/color_new_year_shadow</item>
+    </style>
+    <style name="new_year_allListView" parent="allListView">
+        <item name="android:background">@drawable/new_year_lists_background</item>
+    </style>
+    <style name="new_year_ListItemTextView" parent="ListTextView">
+        <item name="android:shadowColor">@color/color_new_year_title</item>
+        <item name="android:textColor">@color/color_new_year_shadow</item>
+        <item name="android:background">@drawable/new_year_list_item_background</item>
+    </style>
+    <style name="new_year_CaptionsTextView" parent="CaptionsTextView">
+        <item name="android:textColor">@color/color_new_year_title</item>
+        <item name="android:background">@color/color_new_year_main_background</item>
+    </style>
+    <style name="new_year_StyleEditsView" parent="StyleEditsView">
+
+    </style>
+    <style name="new_year_StyleEditsViewContainer">
+        <item name="android:background">@drawable/new_year_filds_background</item>
+    </style>
+    <style name="new_year_StyleEditsViewWithoutContainer" parent="StyleEditsView">
+        <item name="android:background">@drawable/new_year_filds_background</item>
+    </style>
+    <style name="new_year_ButtonStyle" parent="ButtonStyle">
+        <item name="android:textColor">@color/color_new_year_shadow</item>
+        <item name="android:shadowColor">@color/color_new_year_shadow</item>
+        <item name="android:background">@drawable/new_year_button_background</item>
+    </style>
+    <style name="new_year_ToggleButtonStyle">
+        <item name="android:textColor">@color/color_new_year_shadow</item>
+    </style>
+    <style name="new_year_ImageButtonStyle">
+        <item name="android:background">@color/color_new_year_main_background</item>
+    </style>
+
+    //*******************************************************************
+    // для FloatingActionButton
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    //*******************************************************************
+    // для pryvacy_policy_accept Activity
+    <style name="ThemePPDialog" parent="@style/Theme.AppCompat.Dialog">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorControlHighlight">@android:color/white</item>
+        <item name="android:background">@drawable/pp_accept_background</item>
+    </style>
+    <style name="ThemePPCheckBox" parent="@style/Theme.AppCompat">
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="colorControlActivated">@android:color/white</item>
+    </style>
+
+</resources>

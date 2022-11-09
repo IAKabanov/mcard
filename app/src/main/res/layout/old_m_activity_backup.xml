@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlBackupsContainer_old"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="ru.kai.mcard.oldMBackupActivity"
+    style="?attr/mainBackground">
+
+    <android.support.design.widget.AppBarLayout
+        app:theme="?attr/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mBackupsAppBarLayout_old">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mBackupsToolbar_old"
+            android:minHeight="?attr/actionBarSize"
+            android:fitsSystemWindows="true"
+            app:title="@string/backup_title">
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mBackupsAppBarLayout_old"
+        android:layout_marginTop="@dimen/filds_margin"
+        android:layout_marginLeft="@dimen/filds_margin"
+        android:layout_marginRight="@dimen/filds_margin">
+
+        <LinearLayout
+            android:id="@+id/llBackupsButtons_old"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                style="?attr/btnStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/filds_margin"
+                android:text="@string/backup_btn_onbackup"
+                android:id="@+id/btnDoBackup_old"
+                android:onClick="doBackup"/>
+
+            <TextView
+                style="?attr/tvCaptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvBackupDateTimeCaption_old"
+                android:layout_margin="@dimen/filds_margin"
+                android:text="@string/backup_hint_backup_done"
+                android:gravity="left" />
+
+            <TextView
+                style="@style/StyleEditsView"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:id="@+id/tvBackupDateTime_old"
+                android:layout_margin="@dimen/filds_margin"
+                android:hint="@string/backup_hint_backup_done"
+                android:gravity="center" />
+
+            <TextView
+                style="?attr/tvCaptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvBackupInCloudDoneCaption_old"
+                android:layout_margin="@dimen/filds_margin"
+                android:text="@string/backup_hint_backup_in_cloud_done"
+                android:gravity="left" />
+
+            <TextView
+                style="@style/StyleEditsView"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:id="@+id/tvBackupInCloudDone_old"
+                android:layout_margin="@dimen/filds_margin"
+                android:hint="@string/backup_hint_backup_in_cloud_done"
+                android:gravity="center" />
+
+            <TextView
+                style="?attr/tvCaptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvBackupInCloudYesNoCaption_old"
+                android:layout_margin="@dimen/filds_margin"
+                android:text="@string/backup_hint_backup_in_cloud_done_yes_no"
+                android:gravity="left" />
+
+            <TextView
+                style="@style/StyleEditsView"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:id="@+id/tvBackupInCloudYesNo_old"
+                android:layout_margin="@dimen/filds_margin"
+                android:hint="@string/backup_hint_backup_in_cloud_done_yes_no"
+                android:gravity="center" />
+
+            <TextView
+                style="?attr/tvCaptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvBackupInCloudDateTimeCaption_old"
+                android:layout_margin="@dimen/filds_margin"
+                android:text="@string/backup_hint_backup_in_cloud_date_time"
+                android:gravity="left" />
+
+            <TextView
+                style="@style/StyleEditsView"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:id="@+id/tvBackupInCloudDateTime_old"
+                android:layout_margin="@dimen/filds_margin"
+                android:hint="@string/backup_hint_backup_in_cloud_date_time"
+                android:gravity="center" />
+
+            <TextView
+                style="?attr/tvCaptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvBackupOldStateCaption_old"
+                android:layout_margin="@dimen/filds_margin"
+                android:text="@string/backup_hint_backup_old_state"
+                android:gravity="left" />
+
+            <TextView
+                style="@style/StyleEditsView"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:id="@+id/tvBackupOldState_old"
+                android:layout_margin="@dimen/filds_margin"
+                android:hint="@string/backup_hint_backup_old_state"
+                android:gravity="center" />
+
+            <TextView
+                style="?attr/tvCaptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvBackupNewStateBeforeBackupCaption_old"
+                android:layout_margin="@dimen/filds_margin"
+                android:text="@string/backup_hint_backup_new_state_before_backup"
+                android:gravity="left" />
+
+            <TextView
+                style="@style/StyleEditsView"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:id="@+id/tvBackupNewStateBeforeBackup_old"
+                android:layout_margin="@dimen/filds_margin"
+                android:hint="@string/backup_hint_backup_new_state_before_backup"
+                android:gravity="center" />
+
+            <TextView
+                style="?attr/tvCaptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvBackupNewStateAfterBackupCaption_old"
+                android:layout_margin="@dimen/filds_margin"
+                android:text="@string/backup_hint_backup_new_state_after_backup"
+                android:gravity="left" />
+
+            <TextView
+                style="@style/StyleEditsView"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:id="@+id/tvBackupNewStateAfterBackup_old"
+                android:layout_margin="@dimen/filds_margin"
+                android:hint="@string/backup_hint_backup_new_state_after_backup"
+                android:gravity="center" />
+
+            <TextView
+                style="?attr/tvCaptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvRestoreNewStateCaption_old"
+                android:layout_margin="@dimen/filds_margin"
+                android:text="@string/backup_hint_restore_new_state"
+                android:gravity="left" />
+
+            <TextView
+                style="@style/StyleEditsView"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:id="@+id/tvRestoreNewStateRestore_old"
+                android:layout_margin="@dimen/filds_margin"
+                android:hint="@string/backup_hint_restore_new_state"
+                android:gravity="center" />
+
+            <TextView
+                style="?attr/tvCaptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvOnRestoreDoneCaption_old"
+                android:layout_margin="@dimen/filds_margin"
+                android:text="@string/backup_hint_on_restore_done"
+                android:gravity="left" />
+
+            <TextView
+                style="@style/StyleEditsView"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:id="@+id/tvOnRestoreDone_old"
+                android:layout_margin="@dimen/filds_margin"
+                android:hint="@string/backup_hint_on_restore_done"
+                android:gravity="center" />
+
+            <Button
+                style="?attr/btnStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/filds_margin"
+                android:text="@string/backup_btn_onresrore"
+                android:id="@+id/btnDoRestore_old"
+                android:onClick="doRestore"/>
+
+            <Button
+                style="?attr/btnStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/filds_margin"
+                android:text="@string/backup_sdcard_title"
+                android:id="@+id/btnBackupToSDCard_old"
+                android:onClick="backupToSDCard"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+

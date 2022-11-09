@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="specialization_activity" type="layout">@layout/specialization_activity_wide</item>
+
+</resources>

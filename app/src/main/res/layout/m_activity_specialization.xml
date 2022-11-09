@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlSpecializationContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="ru.kai.mcard.MSpecializationActivity"
+    style="?attr/mainBackground">
+
+    <android.support.design.widget.AppBarLayout
+        app:theme="?attr/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mSpecializationAppBarLayout">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mSpecializationToolbar"
+            android:minHeight="?attr/actionBarSize"
+            android:fitsSystemWindows="true"
+            app:title="@string/specialization_title_activity">
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        style="?attr/tvCaptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/common_caption"
+        android:id="@+id/tvSpecializationCaption"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="@dimen/filds_margin"
+        android:layout_marginRight="@dimen/filds_margin"
+        android:layout_below="@+id/mSpecializationAppBarLayout"/>
+
+    <LinearLayout
+        style="?attr/styleEditsViewContainer"
+        android:id="@+id/llSpecializationName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/filds_margin"
+        android:layout_marginLeft="@dimen/filds_margin"
+        android:layout_marginRight="@dimen/filds_margin"
+        android:layout_below="@+id/tvSpecializationCaption">
+
+        <EditText
+            style="@style/StyleEditsView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editSpecializationName"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+

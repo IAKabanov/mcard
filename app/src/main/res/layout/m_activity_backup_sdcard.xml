@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlBackupBackupSDCardContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="ru.kai.mcard.MBackupSDCardActivity"
+    style="?attr/mainBackground">
+
+    <android.support.design.widget.AppBarLayout
+        app:theme="?attr/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mMBackupSDCardAppBarLayout">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mMBackupSDCardToolbar"
+            android:minHeight="?attr/actionBarSize"
+            android:fitsSystemWindows="true"
+            app:title="@string/backup_sdcard_title">
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/llBackupsButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/mMBackupSDCardAppBarLayout"
+        android:layout_marginTop="@dimen/filds_margin_16"
+        android:layout_marginLeft="@dimen/filds_margin"
+        android:layout_marginRight="@dimen/filds_margin">
+
+        <Button
+            style="?attr/btnStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/filds_margin"
+            android:text="@string/backup_sdcard_backup_title"
+            android:id="@+id/btnDoBackup"
+            android:onClick="goForBackupToSDCard"/>
+
+        <Button
+            style="?attr/btnStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/filds_margin"
+            android:text="@string/backup_sdcard_restore_title"
+            android:id="@+id/btnDoRestore"
+            android:elevation="@dimen/filds_margin"
+            android:onClick="goForRestoreFromSDCard"/>
+
+        <TextView
+            style="?attr/tvCaptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvBackupToSDCardHelp"
+            android:text="@string/backup_sdcard_help"
+            android:layout_marginTop="18dp"
+            android:paddingLeft="@dimen/filds_margin_12"
+            android:paddingRight="@dimen/filds_margin_12"
+            android:textStyle="normal"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+

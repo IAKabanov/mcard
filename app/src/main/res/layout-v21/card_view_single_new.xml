@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvSimpleCardView"
+        style="@style/SimpleCardView"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:focusable="true"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/tvSimpleCardView"
+            style="@style/SimpleCardViewText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true" />
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
+
+    <!--
+
+android:foreground="?android:attr/selectableItemBackground"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+app:cardUseCompatPadding="true"
+
+style="?attr/tvSimpleCardView"
+            android:paddingBottom="6dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="6dp"
+
+
+       -->

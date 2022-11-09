@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlBackupBackupSDCardRestoreContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="ru.kai.mcard.MBackupSDCardForRestoreActivity"
+    style="?attr/mainBackground">
+
+    <android.support.design.widget.AppBarLayout
+        app:theme="?attr/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mMBackupSDCardRestoreAppBarLayout">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mMBackupSDCardRestoreToolbar"
+            android:minHeight="?attr/actionBarSize"
+            android:fitsSystemWindows="true"
+            app:title="@string/backup_sdcard_restore_title">
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/llBackupSDCardRestoreButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="7dp"
+        android:layout_below="@+id/mMBackupSDCardRestoreAppBarLayout"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            style="?attr/tvCaptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvBackupSDCardRestoreChosenDirCaption"
+            android:layout_margin="@dimen/filds_margin"
+            android:text="@string/backup_sdcard_restore_text_choose_file"
+            android:gravity="left" />
+
+        <LinearLayout
+            style="?attr/styleEditsViewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/filds_margin"
+            android:layout_marginRight="@dimen/filds_margin">
+
+            <TextView
+                style="@style/StyleEditsView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/tvBackupSDCardRestoreDirFile"
+                android:paddingLeft="@dimen/filds_margin"
+                android:hint="@string/backup_sdcard_restore_text_choose_file_hint"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:singleLine="true" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=">"
+                android:id="@+id/butChosenBackupSDCardRestoreFile"
+                android:onClick="chooseBackupSDCardRestoreFile"/>
+
+        </LinearLayout>
+
+        <Button
+            style="?attr/btnStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/filds_margin"
+            android:text="@string/backup_sdcard_btn_resrore"
+            android:id="@+id/btnDoRestoreFromSDCard"
+            android:elevation="@dimen/filds_margin"
+            android:onClick="doRestoreFromSDCard"/>
+
+        <TextView
+            style="?attr/tvCaptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvBackupToSDCardRestoreHelp"
+            android:text="@string/backup_sdcard_restore_help"
+            android:layout_marginTop="18dp"
+            android:paddingLeft="@dimen/filds_margin_12"
+            android:paddingRight="@dimen/filds_margin_12"
+            android:textStyle="normal"
+            android:textSize="14sp"
+            android:clickable="true"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+

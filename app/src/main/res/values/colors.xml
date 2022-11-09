@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorRedIcon">#B4053D</color>
+
+    //*************************************************
+    // standart_green
+    <color name="colorPrimaryGreen">#00897b</color>  // Teal   600
+    <color name="colorPrimaryDarkGreen">#00695c</color>  // Teal   800
+
+    <color name="color_standart_green_main_background">#b2dfdb</color>  // Teal   100
+    <color name="color_standart_green_shadow">#00695c</color>
+    <color name="color_standart_green_title">#058b37</color>
+    <color name="color_standard_green_main_list_top">#f0fbf7</color>
+    <color name="color_standard_green_main_list_selected">#c5f1e0</color>
+    <color name="color_standart_green_cv_mcard_main_list_visits_item_top">#e8f9f2</color>
+    <color name="color_standart_green_cv_mcard_main_list_visits_item_bottom">#dcf9ec</color>
+    <color name="color_standart_green_item_list_selected_top">#80cbc4</color>  // Teal   200
+    <color name="color_standart_green_item_list_selected_bottom">#4db6ac</color>  // Teal   300
+
+    // для нажатой кнопки фильтр
+    <color name="color_main_list_filter">#0000ff</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="color_standart_green_btn_top_gradient">#d7e1de</color>
+    <color name="color_standart_green_btn_bottom_gradient">#c7d4cf</color>
+
+    <color name="color_standart_green_btn_impel_font">#ab721e</color>
+    <color name="color_standart_green_btn_impel_top_gradient">#e1ddd7</color>
+    <color name="color_standart_green_btn_impel_bottom_gradient">#d4cec7</color>
+
+    <color name="color_standart_green_toolbar_background">#00897b</color>  // Teal   600
+    <color name="color_standart_green_tablayout_background">#4db6ac</color>  // Teal   300
+
+    <color name="color_standart_green_caption_text">#00796b</color>  // Teal   700
+    <color name="color_standart_green_btn_text">#00695c</color>  // Teal   800
+
+    <color name="color_standart_green_menu_navigation_header_start">#4db6ac</color>  // Teal   300
+    <color name="color_standart_green_menu_navigation_header_center">#00897b</color>  // Teal   600
+    <color name="color_standart_green_menu_navigation_header_end">#00695c</color>  // Teal   800
+    <color name="color_standart_green_menu_navigation_view">#b2dfdb</color>  // Teal   100
+
+    <!--<color nacolor_standard_green_accentcent">#FF9100</color>  // Orange A400-->
+    <color name="color_standard_green_accent">#ff4081</color>
+    <color name="color_standard_green_edittext_underline">#80cbc4</color>  // Teal   200
+    <!--<color name="color_standard_green_floatinglabel_underline">#80cbc4</color>-->
+
+    <color name="color_green_pryvacy_policy_transparent">#F0e4faf1</color>
+
+    //*************************************************
+    // standart_lemon
+    <color name="colorPrimaryLemon">#ffb300</color>  // Amber   600
+    <color name="colorPrimaryDarkLemon">#ffa000</color>  // Amber   800
+
+    <color name="color_standart_lemon_shadow">#484002</color>
+    <color name="color_standart_lemon_title">#5c4e00</color>
+    <color name="color_standart_lemon_main_background">#ffecb3</color>  // Amber   100
+    <color name="color_standard_lemon_main_list_top">#fffdf1</color>
+    <color name="color_standard_lemon_main_list_selected">#f1efc8</color>
+    <color name="color_standart_lemon_cv_mcard_main_list_visits_item_top">#fdfae1</color>
+    <color name="color_standart_lemon_cv_mcard_main_list_visits_item_bottom">#fdfbcf</color>
+    <color name="color_standart_lemon_btn_top_gradient">#f5f4ee</color>
+    <color name="color_standart_lemon_btn_bottom_gradient">#eae6cb</color>
+    <color name="color_standart_lemon_item_list_selected_top">#ffe082</color>  // Amber   200
+    <color name="color_standart_lemon_item_list_selected_bottom">#ffd54f</color>  // Amber   300
+
+
+    <color name="color_standart_lemon_btn_impel_font">#ab1e8c</color>
+    <color name="color_standart_lemon_btn_impel_top_gradient">#f5eef4</color>
+    <color name="color_standart_lemon_btn_impel_bottom_gradient">#eacbe5</color>
+
+    <color name="color_standart_lemon_toolbar_background">#ffb300</color>  // Amber   600
+    <color name="color_standart_lemon_tablayout_background">#ffd54f</color>  // Amber   300
+
+    <color name="color_standart_lemon_caption_text">#ffa000</color>  // Amber   800
+    <color name="color_standart_lemon_btn_text">#ff6f00</color>  // Amber   900
+
+    <color name="color_standart_lemon_menu_navigation_header_start">#ffd54f</color>  // Amber   300
+    <color name="color_standart_lemon_menu_navigation_header_center">#ffb300</color>  // Amber   600
+    <color name="color_standart_lemon_menu_navigation_header_end">#ff8f00</color>  // Amber   800
+    <color name="color_standart_lemon_menu_navigation_view">#ffecb3</color>  // Amber   100
+
+    <color name="color_standard_lemon_accent">#1533AD</color>
+    //*************************************************
+    // standart_pink
+    <color name="colorPrimaryPink">#d81b60</color>  // Pink   600
+    <color name="colorPrimaryDarkPink">#ad1457</color>  // Pink   800
+
+    <color name="color_standart_pink_shadow">#801023</color>
+    <color name="color_standart_pink_title">#bf2a44</color>
+    <color name="color_standart_pink_main_background">#f8bbd0</color>  // Pink   100
+    <color name="color_standard_pink_main_list_top">#fff3f5</color>
+    <color name="color_standard_pink_main_list_selected">#f4cad1</color>
+    <color name="color_standart_pink_cv_mcard_main_list_visits_item_top">#fae1e5</color>
+    <color name="color_standart_pink_cv_mcard_main_list_visits_item_bottom">#fdd7dd</color>
+    <color name="color_standart_pink_btn_top_gradient">#ede1e3</color>
+    <color name="color_standart_pink_btn_bottom_gradient">#e7d0d3</color>
+    <color name="color_standart_pink_item_list_selected_top">#f48fb1</color>  // Pink   200
+    <color name="color_standart_pink_item_list_selected_bottom">#f06292</color>  // Pink   300
+
+    <color name="color_standart_pink_btn_impel_font">#20ab1e</color>
+    <color name="color_standart_pink_btn_impel_top_gradient">#e1ede1</color>
+    <color name="color_standart_pink_btn_impel_bottom_gradient">#d0e7d1</color>
+
+    <color name="color_standart_pink_toolbar_background">#d81b60</color>  // Pink   600
+    <color name="color_standart_pink_tablayout_background">#f06292</color>  // Pink   300
+
+    <color name="color_standart_pink_caption_text">#c2185b</color>  // Pink   700
+    <color name="color_standart_pink_btn_text">#ad1457</color>  // Pink   800
+
+    <color name="color_standart_pink_menu_navigation_header_start">#f06292</color>  // Pink   300
+    <color name="color_standart_pink_menu_navigation_header_center">#d81b60</color>  // Pink   600
+    <color name="color_standart_pink_menu_navigation_header_end">#ad1457</color>  // Pink   800
+    <color name="color_standart_pink_menu_navigation_view">#f8bbd0</color>  // Pink   100
+
+    <color name="color_standard_pink_accent">#536dfe</color>
+    //*************************************************
+    // standart_cornflower
+    <color name="colorPrimaryCornflower">#1e88e5</color>  // Blue   600
+    <color name="colorPrimaryDarkCornflower">#1565c0</color>  // Blue   800
+
+    <color name="color_standart_cornflower_shadow">#062e76</color>
+    <color name="color_standart_cornflower_title">#2c67d2</color>
+    <color name="color_standart_cornflower_main_background">#bbdefb</color>  // Blue   100
+    <color name="color_standard_cornflower_main_list_top">#eef2fa</color>
+    <color name="color_standard_cornflower_main_list_selected">#cad9f4</color>
+    <color name="color_standart_cornflower_cv_mcard_main_list_visits_item_top">#e3edff</color>
+    <color name="color_standart_cornflower_cv_mcard_main_list_visits_item_bottom">#caddff</color>
+    <color name="color_standart_cornflower_btn_top_gradient">#d9dee9</color>
+    <color name="color_standart_cornflower_btn_bottom_gradient">#c2d0e7</color>
+    <color name="color_standart_cornflower_item_list_selected_top">#90caf9</color>  // Blue   200
+    <color name="color_standart_cornflower_item_list_selected_bottom">#64b5f6</color>  // Blue   300
+
+    <color name="color_standart_cornflower_btn_impel_font">#ab8c1e</color>
+    <color name="color_standart_cornflower_btn_impel_top_gradient">#e9e5d9</color>
+    <color name="color_standart_cornflower_btn_impel_bottom_gradient">#e7dec2</color>
+
+    <color name="color_standart_cornflower_toolbar_background">#1e88e5</color>  // Blue   600
+    <color name="color_standart_cornflower_tablayout_background">#64b5f6</color>  // Blue   300
+
+    <color name="color_standart_cornflower_caption_text">#1976d2</color>  // Blue   700
+    <color name="color_standart_cornflower_btn_text">#1565c0</color>  // Blue   800
+
+    <color name="color_standart_cornflower_menu_navigation_header_start">#64b5f6</color>  // Blue   300
+    <color name="color_standart_cornflower_menu_navigation_header_center">#1e88e5</color>  // Blue   600
+    <color name="color_standart_cornflower_menu_navigation_header_end">#1565c0</color>  // Blue   800
+    <color name="color_standart_cornflower_menu_navigation_view">#bbdefb</color>  // Blue   100
+
+    <color name="color_standard_cornflower_accent">#ff4081</color>
+    //*************************************************
+    // new_year
+    <color name="color_new_year_shadow">#481902</color>
+    <color name="color_new_year_title">#a75911</color>
+    <color name="color_new_year_main_background">#deb468</color>
+    <color name="color_new_year_main_list">#ede792</color>
+    <color name="color_new_year_main_list1">#e7cf87</color>
+    <color name="color_new_year_btn_top_gradient">#d9c8a1</color>
+    <color name="color_new_year_btn_bottom_gradient">#c9b185</color>
+
+
+    //*************************************************
+    // для FloatingActionButton
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="background">#e5e5e5</color>
+    <color name="half_black">#808080</color>
+    <color name="white">#fafafa</color>
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="pink">#e91e63</color>
+    <color name="pink_pressed">#ec407a</color>
+    <color name="blue_semi_transparent">#805677fc</color>
+    <color name="blue_semi_transparent_pressed">#80738ffe</color>
+    <color name="color_fam">#bb184e</color>
+
+    <color name="fam_red">#fa4a84</color>
+    <color name="fam_plus">#57ff45</color>
+
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <color name="holo_blue_light">#ff33b5e5</color>
+
+    <color name="super_white">#ffffffff</color>
+
+
+</resources>

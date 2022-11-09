@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //**********************************************************************
+    // standart_green
+    <style name="Theme_StandartGreen" parent="@style/StandartTheme.Green" >
+        <item name="mainBackground">@style/standart_green_mainBackground</item>
+        <item name="lvMainList">@style/standart_green_lvMainList</item>
+        <item name="mainListItemBackground">@style/standart_green_MainListItemBackground</item>
+        <item name="tvTitle">@style/standart_green_TitleTextView</item>
+        <item name="tvMainTitle">@style/standart_green_TitleMainTextView</item>
+        <item name="tvVisitsTitle">@style/standart_green_TitleVisitsTextView</item>
+        <item name="tvParamsVisitsTitle">@style/standart_green_TitleParamsTextView</item>
+        <item name="lvAll">@style/standart_green_allListView</item>
+        <item name="tvListItem">@style/standart_green_ListTextView</item>
+        <item name="tvCaptions">@style/standart_green_CaptionsTextView</item>
+        <item name="styleEditsView">@style/standart_green_StyleEditsView</item>
+        <item name="styleEditsViewContainer">@style/standart_green_StyleEditsViewContainer</item>
+        <item name="styleEditsViewWithoutContainer">@style/standart_green_StyleEditsViewWithoutContainer</item>
+        <item name="btnStyle">@style/standart_green_ButtonStyle</item>
+        <item name="btnImpelStyle">@style/standart_green_ButtonImpelStyle</item>
+        <item name="imgButtonStyle">@style/standart_green_ImageButtonStyle</item>
+        <item name="toggleButtonStyle">@style/standart_green_ToggleButtonStyle</item>
+        <item name="scrollingToolBarBackground">@style/standart_green_ScrollingToolBarBackground</item>
+
+        <item name="visitsTabLayout">@style/standart_green_TabLayoutStyle</item>
+        <item name="toolBar">@style/standart_green_ToolBarStyle</item>
+        <item name="scrollingAppBarLayout">@style/standart_green_ScrollingAppBarLayoutStyle</item>
+
+        <item name="headerNavigationView">@style/standart_green_headerNavigationViewStyle</item>
+        <item name="menuNavigationView">@style/standart_green_menuNavigationViewStyle</item>
+        <item name="cvForMCardMainListVisitsItem">@style/standart_green_cvForMCardMainListVisitsItemStyle</item>
+
+        <item name="fabColor">@color/color_standart_green_tablayout_background</item>
+        <item name="fabPressedColor">@color/color_standart_green_toolbar_background</item>
+
+        <item name="accentColor">@color/color_standard_green_accent</item>
+
+        <item name="llSimpleCardView">@style/SimpleCardViewLL</item>
+        <item name="tvSimpleCardView">@style/standart_green_simpleCardViewText</item>
+        <item name="cvSimpleCardViewBackground">@color/color_standard_green_main_list_top</item>
+
+        <item name="editTextPlusStyle">@style/standard_green_EditTextPlusStyle</item>
+        <item name="floatingLabelStyle">@style/standard_green_FloatingLabelStyle</item>
+
+        <item name="colorControlNormal">@color/color_standard_green_edittext_underline</item>
+        <item name="colorControlActivated">@color/color_standard_green_accent</item>
+        <item name="colorControlHighlight">@color/color_standart_green_item_list_selected_top</item>
+
+        <!--<item name="editTextBackground">@drawable/edittext_selector</item>-->
+
+    </style>
+
+    //**********************************************************************
+    // standart_lemon
+    <style name="Theme_StandartLemon" parent="StandartTheme.Lemon" >
+        <item name="mainBackground">@style/standart_lemon_mainBackground</item>
+        <item name="lvMainList">@style/standart_lemon_lvMainList</item>
+        <item name="mainListItemBackground">@style/standart_lemon_MainListItemBackground</item>
+        <item name="tvTitle">@style/standart_lemon_TitleTextView</item>
+        <item name="tvMainTitle">@style/standart_lemon_TitleMainTextView</item>
+        <item name="tvVisitsTitle">@style/standart_lemon_TitleVisitsTextView</item>
+        <item name="tvParamsVisitsTitle">@style/standart_lemon_TitleParamsTextView</item>
+        <item name="lvAll">@style/standart_lemon_allListView</item>
+        <item name="tvListItem">@style/standart_lemon_ListItemTextView</item>
+        <item name="tvCaptions">@style/standart_lemon_CaptionsTextView</item>
+        <item name="styleEditsView">@style/standart_lemon_StyleEditsView</item>
+        <item name="styleEditsViewContainer">@style/standart_lemon_StyleEditsViewContainer</item>
+        <item name="styleEditsViewWithoutContainer">@style/standart_lemon_StyleEditsViewWithoutContainer</item>
+        <item name="btnStyle">@style/standart_lemon_ButtonStyle</item>
+        <item name="btnImpelStyle">@style/standart_lemon_ButtonImpelStyle</item>
+        <item name="imgButtonStyle">@style/standart_lemon_ImageButtonStyle</item>
+        <item name="toggleButtonStyle">@style/standart_lemon_ToggleButtonStyle</item>
+
+        <item name="visitsTabLayout">@style/standart_lemon_TabLayoutStyle</item>
+        <item name="toolBar">@style/standart_lemon_ToolBarStyle</item>
+        <item name="scrollingAppBarLayout">@style/standart_lemon_ScrollingAppBarLayoutStyle</item>
+
+        <item name="headerNavigationView">@style/standart_lemon_headerNavigationViewStyle</item>
+        <item name="menuNavigationView">@style/standart_lemon_menuNavigationViewStyle</item>
+        <item name="cvForMCardMainListVisitsItem">@style/standart_lemon_cvForMCardMainListVisitsItemStyle</item>
+
+        <item name="fabColor">@color/color_standart_lemon_tablayout_background</item>
+        <item name="fabPressedColor">@color/color_standart_lemon_toolbar_background</item>
+
+        <item name="tvSimpleCardView">@style/standart_lemon_simpleCardViewText</item>
+        <item name="cvSimpleCardViewBackground">@color/color_standard_lemon_main_list_selected</item>
+
+        <item name="editTextPlusStyle">@style/standard_lemon_EditTextPlusStyle</item>
+        <item name="floatingLabelStyle">@style/standard_lemon_FloatingLabelStyle</item>
+
+    </style>
+
+    //**********************************************************************
+    // standart_pink
+    <style name="Theme_StandartPink" parent="@style/StandartTheme.Pink" >
+        <item name="mainBackground">@style/standart_pink_mainBackground</item>
+        <item name="lvMainList">@style/standart_pink_lvMainList</item>
+        <item name="mainListItemBackground">@style/standart_pink_MainListItemBackground</item>
+        <item name="tvTitle">@style/standart_pink_TitleTextView</item>
+        <item name="tvMainTitle">@style/standart_pink_TitleMainTextView</item>
+        <item name="tvVisitsTitle">@style/standart_pink_TitleVisitsTextView</item>
+        <item name="tvParamsVisitsTitle">@style/standart_pink_TitleParamsTextView</item>
+        <item name="lvAll">@style/standart_pink_allListView</item>
+        <item name="tvListItem">@style/standart_pink_ListItemTextView</item>
+        <item name="tvCaptions">@style/standart_pink_CaptionsTextView</item>
+        <item name="styleEditsView">@style/standart_pink_StyleEditsView</item>
+        <item name="styleEditsViewContainer">@style/standart_pink_StyleEditsViewContainer</item>
+        <item name="styleEditsViewWithoutContainer">@style/standart_pink_StyleEditsViewWithoutContainer</item>
+        <item name="btnStyle">@style/standart_pink_ButtonStyle</item>
+        <item name="btnImpelStyle">@style/standart_pink_ButtonImpelStyle</item>
+        <item name="imgButtonStyle">@style/standart_pink_ImageButtonStyle</item>
+        <item name="toggleButtonStyle">@style/standart_pink_ToggleButtonStyle</item>
+
+        <item name="visitsTabLayout">@style/standart_pink_TabLayoutStyle</item>
+        <item name="toolBar">@style/standart_pink_ToolBarStyle</item>
+        <item name="scrollingAppBarLayout">@style/standart_pink_ScrollingAppBarLayoutStyle</item>
+
+        <item name="headerNavigationView">@style/standart_pink_headerNavigationViewStyle</item>
+        <item name="menuNavigationView">@style/standart_pink_menuNavigationViewStyle</item>
+        <item name="cvForMCardMainListVisitsItem">@style/standart_pink_cvForMCardMainListVisitsItemStyle</item>
+
+        <item name="fabColor">@color/color_standart_pink_tablayout_background</item>
+        <item name="fabPressedColor">@color/color_standart_pink_toolbar_background</item>
+
+        <item name="tvSimpleCardView">@style/standart_pink_simpleCardViewText</item>
+        <item name="cvSimpleCardViewBackground">@color/color_standard_pink_main_list_selected</item>
+
+        <item name="editTextPlusStyle">@style/standard_pink_EditTextPlusStyle</item>
+        <item name="floatingLabelStyle">@style/standard_pink_FloatingLabelStyle</item>
+    </style>
+
+    //**********************************************************************
+    // standart_cornflower
+    <style name="Theme_StandartCornflower" parent="StandartTheme.Cornflower" >
+        <item name="mainBackground">@style/standart_cornflower_mainBackground</item>
+        <item name="lvMainList">@style/standart_cornflower_lvMainList</item>
+        <item name="mainListItemBackground">@style/standart_cornflower_MainListItemBackground</item>
+        <item name="tvTitle">@style/standart_cornflower_TitleTextView</item>
+        <item name="tvMainTitle">@style/standart_cornflower_TitleMainTextView</item>
+        <item name="tvVisitsTitle">@style/standart_cornflower_TitleVisitsTextView</item>
+        <item name="tvParamsVisitsTitle">@style/standart_cornflower_TitleParamsTextView</item>
+        <item name="lvAll">@style/standart_cornflower_allListView</item>
+        <item name="tvListItem">@style/standart_cornflower_ListItemTextView</item>
+        <item name="tvCaptions">@style/standart_cornflower_CaptionsTextView</item>
+        <item name="styleEditsView">@style/standart_cornflower_StyleEditsView</item>
+        <item name="styleEditsViewContainer">@style/standart_cornflower_StyleEditsViewContainer</item>
+        <item name="styleEditsViewWithoutContainer">@style/standart_cornflower_StyleEditsViewWithoutContainer</item>
+        <item name="btnStyle">@style/standart_cornflower_ButtonStyle</item>
+        <item name="btnImpelStyle">@style/standart_cornflower_ButtonImpelStyle</item>
+        <item name="imgButtonStyle">@style/standart_cornflower_ImageButtonStyle</item>
+        <item name="toggleButtonStyle">@style/standart_cornflower_ToggleButtonStyle</item>
+
+        <item name="visitsTabLayout">@style/standart_cornflower_TabLayoutStyle</item>
+        <item name="toolBar">@style/standart_cornflower_ToolBarStyle</item>
+        <item name="scrollingAppBarLayout">@style/standart_cornflower_ScrollingAppBarLayoutStyle</item>
+
+        <item name="headerNavigationView">@style/standart_cornflower_headerNavigationViewStyle</item>
+        <item name="menuNavigationView">@style/standart_cornflower_menuNavigationViewStyle</item>
+        <item name="cvForMCardMainListVisitsItem">@style/standart_cornflower_cvForMCardMainListVisitsItemStyle</item>
+
+        <item name="fabColor">@color/color_standart_cornflower_tablayout_background</item>
+        <item name="fabPressedColor">@color/color_standart_cornflower_toolbar_background</item>
+
+        <item name="tvSimpleCardView">@style/standart_cornflower_simpleCardViewText</item>
+        <item name="cvSimpleCardViewBackground">@color/color_standard_cornflower_main_list_selected</item>
+
+        <item name="editTextPlusStyle">@style/standard_cornflower_EditTextPlusStyle</item>
+        <item name="floatingLabelStyle">@style/standard_cornflower_FloatingLabelStyle</item>
+    </style>
+
+    //**********************************************************************
+    // new_year
+    <style name="Theme_NewYear" parent="@style/StandartTheme" >
+        <item name="mainBackground">@style/new_year_mainBackground</item>
+        <item name="lvMainList">@style/new_year_lvMainList</item>
+        <item name="mainListItemBackground">@style/new_year_MainListItemBackground</item>
+        <item name="tvTitle">@style/new_year_TitleTextView</item>
+        <item name="tvMainTitle">@style/new_year_TitleMainTextView</item>
+        <item name="tvVisitsTitle">@style/new_year_TitleVisitsTextView</item>
+        <item name="tvParamsVisitsTitle">@style/new_year_TitleParamsTextView</item>
+        <item name="lvAll">@style/new_year_allListView</item>
+        <item name="tvListItem">@style/new_year_ListItemTextView</item>
+        <item name="tvCaptions">@style/new_year_CaptionsTextView</item>
+        <item name="styleEditsView">@style/new_year_StyleEditsView</item>
+        <item name="styleEditsViewContainer">@style/new_year_StyleEditsViewContainer</item>
+        <item name="styleEditsViewWithoutContainer">@style/new_year_StyleEditsViewWithoutContainer</item>
+        <item name="btnStyle">@style/new_year_ButtonStyle</item>
+        <item name="imgButtonStyle">@style/new_year_ImageButtonStyle</item>
+        <item name="toggleButtonStyle">@style/new_year_ToggleButtonStyle</item>
+    </style>
+
+</resources>

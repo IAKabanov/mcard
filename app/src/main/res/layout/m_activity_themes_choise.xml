@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlThemesChoiseContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="ru.kai.mcard.MThemesChoiseActivity"
+    style="?attr/mainBackground">
+
+    <android.support.design.widget.AppBarLayout
+        app:theme="?attr/toolBar"
+        android:id="@+id/mThemesChoiseAppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/mThemesChoiseToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:fitsSystemWindows="true"
+            app:title="@string/themes_choise_toolbar_title">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        style="?attr/tvMainTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/themes_choise_title"
+        android:id="@+id/tvThemesChoiseTitle"
+        android:textIsSelectable="false"
+        android:layout_gravity="top"
+        android:layout_below="@+id/mThemesChoiseAppBarLayout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/svThemesChoice"
+        android:layout_below="@+id/tvThemesChoiseTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:paddingLeft="@dimen/filds_margin_8"
+        android:paddingRight="@dimen/filds_margin_8">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="2dp"
+                        android:id="@+id/ivGreenStandart"
+                        android:src="@drawable/theme_green_standart"
+                        android:scaleType="fitStart"
+                        android:adjustViewBounds="true"
+                        android:clickable="true"
+                        android:onClick="choiseTheme"/>
+
+                    <TextView
+                        style="?attr/tvCaptions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/themes_standart_green"
+                        android:id="@+id/tvGreenStandart"
+                        android:clickable="true"
+                        android:onClick="choiseTheme"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="2dp"
+                        android:id="@+id/ivLemonStandart"
+                        android:src="@drawable/theme_lemon_standart"
+                        android:scaleType="fitStart"
+                        android:adjustViewBounds="true"
+                        android:clickable="true"
+                        android:onClick="choiseTheme"/>
+
+                    <TextView
+                        style="?attr/tvCaptions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/themes_standart_lemon"
+                        android:id="@+id/tvLemonStandart" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="2dp"
+                        android:id="@+id/ivPinkStandart"
+                        android:src="@drawable/theme_pink_standart"
+                        android:scaleType="fitStart"
+                        android:adjustViewBounds="true"
+                        android:clickable="true"
+                        android:onClick="choiseTheme"/>
+
+                    <TextView
+                        style="?attr/tvCaptions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/themes_standart_pink"
+                        android:id="@+id/tvPinkStandart"
+                        android:clickable="true"
+                        android:onClick="choiseTheme"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="2dp"
+                        android:id="@+id/ivCornflowersStandart"
+                        android:src="@drawable/theme_cornflower_standart"
+                        android:scaleType="fitStart"
+                        android:adjustViewBounds="true"
+                        android:clickable="true"
+                        android:onClick="choiseTheme"/>
+
+                    <TextView
+                        style="?attr/tvCaptions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/themes_standart_cornflower"
+                        android:id="@+id/tvCornflowersStandart" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="2dp"
+                        android:id="@+id/imageView"
+                        android:src="@drawable/theme_new_year"
+                        android:scaleType="fitStart"
+                        android:adjustViewBounds="true"
+                        android:clickable="true"
+                        android:onClick="choiseTheme"/>
+
+                    <TextView
+                        style="?attr/tvCaptions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/themes_new_year"
+                        android:id="@+id/textView"
+                        android:clickable="true"
+                        android:onClick="choiseTheme"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="2dp"
+                        android:id="@+id/imageView2"
+                        android:src="@drawable/theme_green_peas"
+                        android:scaleType="fitStart"
+                        android:adjustViewBounds="true"
+                        android:clickable="true"
+                        android:onClick="choiseTheme"/>
+
+                    <TextView
+                        style="?attr/tvCaptions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/themes_green_peas"
+                        android:id="@+id/textView2" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                style="?attr/btnStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/but_apply"
+                android:id="@+id/btnThemesChoiceApply"
+                android:onClick="themesChoiceSave"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+
